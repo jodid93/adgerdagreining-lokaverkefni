@@ -3,7 +3,9 @@
 #  gurobi_cl TimeLimit=3600 ResultFile=proftafla.sol proftafla.lp
 
 set CidExam; # Mengi námskeiða
-set Group{1..61} within CidExam; # Skilgreindar námsbrautir/leiðir
+ # Skilgreindar námsbrautir/leiðir, frá 62 upp þá er það samkennd námskeið
+set Group{1..71} within CidExam;
+
 
 param n := 11; # fjöldi prófdaga
 set ExamSlots := 1..(2*n); # Prófstokkar
@@ -20,18 +22,13 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
 # Passa að það sé bara 1 próf fyrir hvert námskeið
 s.t. OneTestOverall{c in CidExam}: sum{e in ExamSlots} Slot[c,e] = 1;
-# 0 * skiptir ekki = 0 ekki með neina sameiginlega nemendur löglegt
-# >1 * (1 - 0) = >1 með sameiginlega nemendur í sama stokki ólöglegt
-# >1 * (1 - 1) = 0 sameiginlegir nemendur ekki í sama stokki löglegt
+#Próf með sameiginlega nemendur mega ekki vera í sama stokki
 s.t. SameTime{e in ExamSlots, c1 in CidExam, c2 in CidExam: cidCommon[c1, c2] > 0}: 
 				Slot[c1, e] + Slot[c2, e] <= 1;
 
-# 0 * skiptir ekki = 0 ekki samkennt löglegt
-# 1 * (1 - 1) = 0 samkennt í sama stokk löglegt
-# 1 * (1 - 0) = |1| samkennt ekki í sama stokk ólöglegt
-#s.t. SameTaught{e in ExamSlots, c1 in CidSameExam, c2 in CidSameExam: cidSame[c1,c2] > 0}:
-#				Slot[c1, e] + Slot[c2, e] <= 1; 
-#LAGALGAELGALGALGL
+s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots: c1 <> c2}:
+				Slot[c1, e] - Slot[c2, e] = 0;
+
 
 # Ef próf er í sömu grúppu þá mega þau ekki vera í sama stokk
 #s.t. oneExamPerMajor{i in 1..61, c1 in Group[i], c2 in Group[i]: c1<>c2}:

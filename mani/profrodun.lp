@@ -44116,356 +44116,886 @@ Subject To
  <= 1
  SameTime(22,EDL203G,EFN612M): + Slot(EFN612M,22) + Slot(EDL203G,22)
  <= 1
- SameTaught(1,EDL206G,EDL201G): + Slot(EDL201G,1) + Slot(EDL206G,1) <= 1
- SameTaught(1,RAF402G,EDL401G): + Slot(RAF402G,1) + Slot(EDL401G,1) <= 1
- SameTaught(1,EFN214G,EFN205G): + Slot(EFN205G,1) + Slot(EFN214G,1) <= 1
- SameTaught(1,FER409G,FER210F): + Slot(FER409G,1) + Slot(FER210F,1) <= 1
- SameTaught(1,FER609G,FER211F): + Slot(FER609G,1) + Slot(FER211F,1) <= 1
- SameTaught(1,STA209G,LAN203G): + Slot(LAN203G,1) + Slot(STA209G,1) <= 1
- SameTaught(1,LAN410G,LAN209F): + Slot(LAN410G,1) + Slot(LAN209F,1) <= 1
- SameTaught(1,LIF633G,LIF227F): + Slot(LIF633G,1) + Slot(LIF227F,1) <= 1
- SameTaught(1,LIF410G,LIF243F): + Slot(LIF410G,1) + Slot(LIF243F,1) <= 1
- SameTaught(1,STA203G,MAS201F): + Slot(STA203G,1) + Slot(MAS201F,1) <= 1
- SameTaught(2,EDL206G,EDL201G): + Slot(EDL201G,2) + Slot(EDL206G,2) <= 1
- SameTaught(2,RAF402G,EDL401G): + Slot(RAF402G,2) + Slot(EDL401G,2) <= 1
- SameTaught(2,EFN214G,EFN205G): + Slot(EFN205G,2) + Slot(EFN214G,2) <= 1
- SameTaught(2,FER409G,FER210F): + Slot(FER409G,2) + Slot(FER210F,2) <= 1
- SameTaught(2,FER609G,FER211F): + Slot(FER609G,2) + Slot(FER211F,2) <= 1
- SameTaught(2,STA209G,LAN203G): + Slot(LAN203G,2) + Slot(STA209G,2) <= 1
- SameTaught(2,LAN410G,LAN209F): + Slot(LAN410G,2) + Slot(LAN209F,2) <= 1
- SameTaught(2,LIF633G,LIF227F): + Slot(LIF633G,2) + Slot(LIF227F,2) <= 1
- SameTaught(2,LIF410G,LIF243F): + Slot(LIF410G,2) + Slot(LIF243F,2) <= 1
- SameTaught(2,STA203G,MAS201F): + Slot(STA203G,2) + Slot(MAS201F,2) <= 1
- SameTaught(3,EDL206G,EDL201G): + Slot(EDL201G,3) + Slot(EDL206G,3) <= 1
- SameTaught(3,RAF402G,EDL401G): + Slot(RAF402G,3) + Slot(EDL401G,3) <= 1
- SameTaught(3,EFN214G,EFN205G): + Slot(EFN205G,3) + Slot(EFN214G,3) <= 1
- SameTaught(3,FER409G,FER210F): + Slot(FER409G,3) + Slot(FER210F,3) <= 1
- SameTaught(3,FER609G,FER211F): + Slot(FER609G,3) + Slot(FER211F,3) <= 1
- SameTaught(3,STA209G,LAN203G): + Slot(LAN203G,3) + Slot(STA209G,3) <= 1
- SameTaught(3,LAN410G,LAN209F): + Slot(LAN410G,3) + Slot(LAN209F,3) <= 1
- SameTaught(3,LIF633G,LIF227F): + Slot(LIF633G,3) + Slot(LIF227F,3) <= 1
- SameTaught(3,LIF410G,LIF243F): + Slot(LIF410G,3) + Slot(LIF243F,3) <= 1
- SameTaught(3,STA203G,MAS201F): + Slot(STA203G,3) + Slot(MAS201F,3) <= 1
- SameTaught(4,EDL206G,EDL201G): + Slot(EDL201G,4) + Slot(EDL206G,4) <= 1
- SameTaught(4,RAF402G,EDL401G): + Slot(RAF402G,4) + Slot(EDL401G,4) <= 1
- SameTaught(4,EFN214G,EFN205G): + Slot(EFN205G,4) + Slot(EFN214G,4) <= 1
- SameTaught(4,FER409G,FER210F): + Slot(FER409G,4) + Slot(FER210F,4) <= 1
- SameTaught(4,FER609G,FER211F): + Slot(FER609G,4) + Slot(FER211F,4) <= 1
- SameTaught(4,STA209G,LAN203G): + Slot(LAN203G,4) + Slot(STA209G,4) <= 1
- SameTaught(4,LAN410G,LAN209F): + Slot(LAN410G,4) + Slot(LAN209F,4) <= 1
- SameTaught(4,LIF633G,LIF227F): + Slot(LIF633G,4) + Slot(LIF227F,4) <= 1
- SameTaught(4,LIF410G,LIF243F): + Slot(LIF410G,4) + Slot(LIF243F,4) <= 1
- SameTaught(4,STA203G,MAS201F): + Slot(STA203G,4) + Slot(MAS201F,4) <= 1
- SameTaught(5,EDL206G,EDL201G): + Slot(EDL201G,5) + Slot(EDL206G,5) <= 1
- SameTaught(5,RAF402G,EDL401G): + Slot(RAF402G,5) + Slot(EDL401G,5) <= 1
- SameTaught(5,EFN214G,EFN205G): + Slot(EFN205G,5) + Slot(EFN214G,5) <= 1
- SameTaught(5,FER409G,FER210F): + Slot(FER409G,5) + Slot(FER210F,5) <= 1
- SameTaught(5,FER609G,FER211F): + Slot(FER609G,5) + Slot(FER211F,5) <= 1
- SameTaught(5,STA209G,LAN203G): + Slot(LAN203G,5) + Slot(STA209G,5) <= 1
- SameTaught(5,LAN410G,LAN209F): + Slot(LAN410G,5) + Slot(LAN209F,5) <= 1
- SameTaught(5,LIF633G,LIF227F): + Slot(LIF633G,5) + Slot(LIF227F,5) <= 1
- SameTaught(5,LIF410G,LIF243F): + Slot(LIF410G,5) + Slot(LIF243F,5) <= 1
- SameTaught(5,STA203G,MAS201F): + Slot(STA203G,5) + Slot(MAS201F,5) <= 1
- SameTaught(6,EDL206G,EDL201G): + Slot(EDL201G,6) + Slot(EDL206G,6) <= 1
- SameTaught(6,RAF402G,EDL401G): + Slot(RAF402G,6) + Slot(EDL401G,6) <= 1
- SameTaught(6,EFN214G,EFN205G): + Slot(EFN205G,6) + Slot(EFN214G,6) <= 1
- SameTaught(6,FER409G,FER210F): + Slot(FER409G,6) + Slot(FER210F,6) <= 1
- SameTaught(6,FER609G,FER211F): + Slot(FER609G,6) + Slot(FER211F,6) <= 1
- SameTaught(6,STA209G,LAN203G): + Slot(LAN203G,6) + Slot(STA209G,6) <= 1
- SameTaught(6,LAN410G,LAN209F): + Slot(LAN410G,6) + Slot(LAN209F,6) <= 1
- SameTaught(6,LIF633G,LIF227F): + Slot(LIF633G,6) + Slot(LIF227F,6) <= 1
- SameTaught(6,LIF410G,LIF243F): + Slot(LIF410G,6) + Slot(LIF243F,6) <= 1
- SameTaught(6,STA203G,MAS201F): + Slot(STA203G,6) + Slot(MAS201F,6) <= 1
- SameTaught(7,EDL206G,EDL201G): + Slot(EDL201G,7) + Slot(EDL206G,7) <= 1
- SameTaught(7,RAF402G,EDL401G): + Slot(RAF402G,7) + Slot(EDL401G,7) <= 1
- SameTaught(7,EFN214G,EFN205G): + Slot(EFN205G,7) + Slot(EFN214G,7) <= 1
- SameTaught(7,FER409G,FER210F): + Slot(FER409G,7) + Slot(FER210F,7) <= 1
- SameTaught(7,FER609G,FER211F): + Slot(FER609G,7) + Slot(FER211F,7) <= 1
- SameTaught(7,STA209G,LAN203G): + Slot(LAN203G,7) + Slot(STA209G,7) <= 1
- SameTaught(7,LAN410G,LAN209F): + Slot(LAN410G,7) + Slot(LAN209F,7) <= 1
- SameTaught(7,LIF633G,LIF227F): + Slot(LIF633G,7) + Slot(LIF227F,7) <= 1
- SameTaught(7,LIF410G,LIF243F): + Slot(LIF410G,7) + Slot(LIF243F,7) <= 1
- SameTaught(7,STA203G,MAS201F): + Slot(STA203G,7) + Slot(MAS201F,7) <= 1
- SameTaught(8,EDL206G,EDL201G): + Slot(EDL201G,8) + Slot(EDL206G,8) <= 1
- SameTaught(8,RAF402G,EDL401G): + Slot(RAF402G,8) + Slot(EDL401G,8) <= 1
- SameTaught(8,EFN214G,EFN205G): + Slot(EFN205G,8) + Slot(EFN214G,8) <= 1
- SameTaught(8,FER409G,FER210F): + Slot(FER409G,8) + Slot(FER210F,8) <= 1
- SameTaught(8,FER609G,FER211F): + Slot(FER609G,8) + Slot(FER211F,8) <= 1
- SameTaught(8,STA209G,LAN203G): + Slot(LAN203G,8) + Slot(STA209G,8) <= 1
- SameTaught(8,LAN410G,LAN209F): + Slot(LAN410G,8) + Slot(LAN209F,8) <= 1
- SameTaught(8,LIF633G,LIF227F): + Slot(LIF633G,8) + Slot(LIF227F,8) <= 1
- SameTaught(8,LIF410G,LIF243F): + Slot(LIF410G,8) + Slot(LIF243F,8) <= 1
- SameTaught(8,STA203G,MAS201F): + Slot(STA203G,8) + Slot(MAS201F,8) <= 1
- SameTaught(9,EDL206G,EDL201G): + Slot(EDL201G,9) + Slot(EDL206G,9) <= 1
- SameTaught(9,RAF402G,EDL401G): + Slot(RAF402G,9) + Slot(EDL401G,9) <= 1
- SameTaught(9,EFN214G,EFN205G): + Slot(EFN205G,9) + Slot(EFN214G,9) <= 1
- SameTaught(9,FER409G,FER210F): + Slot(FER409G,9) + Slot(FER210F,9) <= 1
- SameTaught(9,FER609G,FER211F): + Slot(FER609G,9) + Slot(FER211F,9) <= 1
- SameTaught(9,STA209G,LAN203G): + Slot(LAN203G,9) + Slot(STA209G,9) <= 1
- SameTaught(9,LAN410G,LAN209F): + Slot(LAN410G,9) + Slot(LAN209F,9) <= 1
- SameTaught(9,LIF633G,LIF227F): + Slot(LIF633G,9) + Slot(LIF227F,9) <= 1
- SameTaught(9,LIF410G,LIF243F): + Slot(LIF410G,9) + Slot(LIF243F,9) <= 1
- SameTaught(9,STA203G,MAS201F): + Slot(STA203G,9) + Slot(MAS201F,9) <= 1
- SameTaught(10,EDL206G,EDL201G): + Slot(EDL201G,10) + Slot(EDL206G,10)
+ SameTaught(62,EDL201G,EDL401G,1): + Slot(EDL401G,1) + Slot(EDL201G,1)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,2): + Slot(EDL401G,2) + Slot(EDL201G,2)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,3): + Slot(EDL401G,3) + Slot(EDL201G,3)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,4): + Slot(EDL401G,4) + Slot(EDL201G,4)
  <= 1
- SameTaught(10,RAF402G,EDL401G): + Slot(RAF402G,10) + Slot(EDL401G,10)
- <= 1
- SameTaught(10,EFN214G,EFN205G): + Slot(EFN205G,10) + Slot(EFN214G,10)
- <= 1
- SameTaught(10,FER409G,FER210F): + Slot(FER409G,10) + Slot(FER210F,10)
- <= 1
- SameTaught(10,FER609G,FER211F): + Slot(FER609G,10) + Slot(FER211F,10)
- <= 1
- SameTaught(10,STA209G,LAN203G): + Slot(LAN203G,10) + Slot(STA209G,10)
- <= 1
- SameTaught(10,LAN410G,LAN209F): + Slot(LAN410G,10) + Slot(LAN209F,10)
- <= 1
- SameTaught(10,LIF633G,LIF227F): + Slot(LIF633G,10) + Slot(LIF227F,10)
- <= 1
- SameTaught(10,LIF410G,LIF243F): + Slot(LIF410G,10) + Slot(LIF243F,10)
- <= 1
- SameTaught(10,STA203G,MAS201F): + Slot(STA203G,10) + Slot(MAS201F,10)
- <= 1
- SameTaught(11,EDL206G,EDL201G): + Slot(EDL201G,11) + Slot(EDL206G,11)
- <= 1
- SameTaught(11,RAF402G,EDL401G): + Slot(RAF402G,11) + Slot(EDL401G,11)
- <= 1
- SameTaught(11,EFN214G,EFN205G): + Slot(EFN205G,11) + Slot(EFN214G,11)
- <= 1
- SameTaught(11,FER409G,FER210F): + Slot(FER409G,11) + Slot(FER210F,11)
- <= 1
- SameTaught(11,FER609G,FER211F): + Slot(FER609G,11) + Slot(FER211F,11)
- <= 1
- SameTaught(11,STA209G,LAN203G): + Slot(LAN203G,11) + Slot(STA209G,11)
- <= 1
- SameTaught(11,LAN410G,LAN209F): + Slot(LAN410G,11) + Slot(LAN209F,11)
- <= 1
- SameTaught(11,LIF633G,LIF227F): + Slot(LIF633G,11) + Slot(LIF227F,11)
- <= 1
- SameTaught(11,LIF410G,LIF243F): + Slot(LIF410G,11) + Slot(LIF243F,11)
- <= 1
- SameTaught(11,STA203G,MAS201F): + Slot(STA203G,11) + Slot(MAS201F,11)
- <= 1
- SameTaught(12,EDL206G,EDL201G): + Slot(EDL201G,12) + Slot(EDL206G,12)
- <= 1
- SameTaught(12,RAF402G,EDL401G): + Slot(RAF402G,12) + Slot(EDL401G,12)
- <= 1
- SameTaught(12,EFN214G,EFN205G): + Slot(EFN205G,12) + Slot(EFN214G,12)
- <= 1
- SameTaught(12,FER409G,FER210F): + Slot(FER409G,12) + Slot(FER210F,12)
- <= 1
- SameTaught(12,FER609G,FER211F): + Slot(FER609G,12) + Slot(FER211F,12)
- <= 1
- SameTaught(12,STA209G,LAN203G): + Slot(LAN203G,12) + Slot(STA209G,12)
- <= 1
- SameTaught(12,LAN410G,LAN209F): + Slot(LAN410G,12) + Slot(LAN209F,12)
- <= 1
- SameTaught(12,LIF633G,LIF227F): + Slot(LIF633G,12) + Slot(LIF227F,12)
- <= 1
- SameTaught(12,LIF410G,LIF243F): + Slot(LIF410G,12) + Slot(LIF243F,12)
- <= 1
- SameTaught(12,STA203G,MAS201F): + Slot(STA203G,12) + Slot(MAS201F,12)
- <= 1
- SameTaught(13,EDL206G,EDL201G): + Slot(EDL201G,13) + Slot(EDL206G,13)
- <= 1
- SameTaught(13,RAF402G,EDL401G): + Slot(RAF402G,13) + Slot(EDL401G,13)
- <= 1
- SameTaught(13,EFN214G,EFN205G): + Slot(EFN205G,13) + Slot(EFN214G,13)
- <= 1
- SameTaught(13,FER409G,FER210F): + Slot(FER409G,13) + Slot(FER210F,13)
- <= 1
- SameTaught(13,FER609G,FER211F): + Slot(FER609G,13) + Slot(FER211F,13)
- <= 1
- SameTaught(13,STA209G,LAN203G): + Slot(LAN203G,13) + Slot(STA209G,13)
- <= 1
- SameTaught(13,LAN410G,LAN209F): + Slot(LAN410G,13) + Slot(LAN209F,13)
- <= 1
- SameTaught(13,LIF633G,LIF227F): + Slot(LIF633G,13) + Slot(LIF227F,13)
- <= 1
- SameTaught(13,LIF410G,LIF243F): + Slot(LIF410G,13) + Slot(LIF243F,13)
- <= 1
- SameTaught(13,STA203G,MAS201F): + Slot(STA203G,13) + Slot(MAS201F,13)
- <= 1
- SameTaught(14,EDL206G,EDL201G): + Slot(EDL201G,14) + Slot(EDL206G,14)
- <= 1
- SameTaught(14,RAF402G,EDL401G): + Slot(RAF402G,14) + Slot(EDL401G,14)
- <= 1
- SameTaught(14,EFN214G,EFN205G): + Slot(EFN205G,14) + Slot(EFN214G,14)
- <= 1
- SameTaught(14,FER409G,FER210F): + Slot(FER409G,14) + Slot(FER210F,14)
- <= 1
- SameTaught(14,FER609G,FER211F): + Slot(FER609G,14) + Slot(FER211F,14)
- <= 1
- SameTaught(14,STA209G,LAN203G): + Slot(LAN203G,14) + Slot(STA209G,14)
- <= 1
- SameTaught(14,LAN410G,LAN209F): + Slot(LAN410G,14) + Slot(LAN209F,14)
- <= 1
- SameTaught(14,LIF633G,LIF227F): + Slot(LIF633G,14) + Slot(LIF227F,14)
- <= 1
- SameTaught(14,LIF410G,LIF243F): + Slot(LIF410G,14) + Slot(LIF243F,14)
- <= 1
- SameTaught(14,STA203G,MAS201F): + Slot(STA203G,14) + Slot(MAS201F,14)
- <= 1
- SameTaught(15,EDL206G,EDL201G): + Slot(EDL201G,15) + Slot(EDL206G,15)
- <= 1
- SameTaught(15,RAF402G,EDL401G): + Slot(RAF402G,15) + Slot(EDL401G,15)
- <= 1
- SameTaught(15,EFN214G,EFN205G): + Slot(EFN205G,15) + Slot(EFN214G,15)
- <= 1
- SameTaught(15,FER409G,FER210F): + Slot(FER409G,15) + Slot(FER210F,15)
- <= 1
- SameTaught(15,FER609G,FER211F): + Slot(FER609G,15) + Slot(FER211F,15)
- <= 1
- SameTaught(15,STA209G,LAN203G): + Slot(LAN203G,15) + Slot(STA209G,15)
- <= 1
- SameTaught(15,LAN410G,LAN209F): + Slot(LAN410G,15) + Slot(LAN209F,15)
- <= 1
- SameTaught(15,LIF633G,LIF227F): + Slot(LIF633G,15) + Slot(LIF227F,15)
- <= 1
- SameTaught(15,LIF410G,LIF243F): + Slot(LIF410G,15) + Slot(LIF243F,15)
- <= 1
- SameTaught(15,STA203G,MAS201F): + Slot(STA203G,15) + Slot(MAS201F,15)
- <= 1
- SameTaught(16,EDL206G,EDL201G): + Slot(EDL201G,16) + Slot(EDL206G,16)
- <= 1
- SameTaught(16,RAF402G,EDL401G): + Slot(RAF402G,16) + Slot(EDL401G,16)
- <= 1
- SameTaught(16,EFN214G,EFN205G): + Slot(EFN205G,16) + Slot(EFN214G,16)
- <= 1
- SameTaught(16,FER409G,FER210F): + Slot(FER409G,16) + Slot(FER210F,16)
- <= 1
- SameTaught(16,FER609G,FER211F): + Slot(FER609G,16) + Slot(FER211F,16)
- <= 1
- SameTaught(16,STA209G,LAN203G): + Slot(LAN203G,16) + Slot(STA209G,16)
- <= 1
- SameTaught(16,LAN410G,LAN209F): + Slot(LAN410G,16) + Slot(LAN209F,16)
- <= 1
- SameTaught(16,LIF633G,LIF227F): + Slot(LIF633G,16) + Slot(LIF227F,16)
- <= 1
- SameTaught(16,LIF410G,LIF243F): + Slot(LIF410G,16) + Slot(LIF243F,16)
- <= 1
- SameTaught(16,STA203G,MAS201F): + Slot(STA203G,16) + Slot(MAS201F,16)
- <= 1
- SameTaught(17,EDL206G,EDL201G): + Slot(EDL201G,17) + Slot(EDL206G,17)
- <= 1
- SameTaught(17,RAF402G,EDL401G): + Slot(RAF402G,17) + Slot(EDL401G,17)
- <= 1
- SameTaught(17,EFN214G,EFN205G): + Slot(EFN205G,17) + Slot(EFN214G,17)
- <= 1
- SameTaught(17,FER409G,FER210F): + Slot(FER409G,17) + Slot(FER210F,17)
- <= 1
- SameTaught(17,FER609G,FER211F): + Slot(FER609G,17) + Slot(FER211F,17)
- <= 1
- SameTaught(17,STA209G,LAN203G): + Slot(LAN203G,17) + Slot(STA209G,17)
- <= 1
- SameTaught(17,LAN410G,LAN209F): + Slot(LAN410G,17) + Slot(LAN209F,17)
- <= 1
- SameTaught(17,LIF633G,LIF227F): + Slot(LIF633G,17) + Slot(LIF227F,17)
- <= 1
- SameTaught(17,LIF410G,LIF243F): + Slot(LIF410G,17) + Slot(LIF243F,17)
- <= 1
- SameTaught(17,STA203G,MAS201F): + Slot(STA203G,17) + Slot(MAS201F,17)
- <= 1
- SameTaught(18,EDL206G,EDL201G): + Slot(EDL201G,18) + Slot(EDL206G,18)
- <= 1
- SameTaught(18,RAF402G,EDL401G): + Slot(RAF402G,18) + Slot(EDL401G,18)
- <= 1
- SameTaught(18,EFN214G,EFN205G): + Slot(EFN205G,18) + Slot(EFN214G,18)
- <= 1
- SameTaught(18,FER409G,FER210F): + Slot(FER409G,18) + Slot(FER210F,18)
- <= 1
- SameTaught(18,FER609G,FER211F): + Slot(FER609G,18) + Slot(FER211F,18)
- <= 1
- SameTaught(18,STA209G,LAN203G): + Slot(LAN203G,18) + Slot(STA209G,18)
- <= 1
- SameTaught(18,LAN410G,LAN209F): + Slot(LAN410G,18) + Slot(LAN209F,18)
- <= 1
- SameTaught(18,LIF633G,LIF227F): + Slot(LIF633G,18) + Slot(LIF227F,18)
- <= 1
- SameTaught(18,LIF410G,LIF243F): + Slot(LIF410G,18) + Slot(LIF243F,18)
- <= 1
- SameTaught(18,STA203G,MAS201F): + Slot(STA203G,18) + Slot(MAS201F,18)
- <= 1
- SameTaught(19,EDL206G,EDL201G): + Slot(EDL201G,19) + Slot(EDL206G,19)
- <= 1
- SameTaught(19,RAF402G,EDL401G): + Slot(RAF402G,19) + Slot(EDL401G,19)
- <= 1
- SameTaught(19,EFN214G,EFN205G): + Slot(EFN205G,19) + Slot(EFN214G,19)
- <= 1
- SameTaught(19,FER409G,FER210F): + Slot(FER409G,19) + Slot(FER210F,19)
- <= 1
- SameTaught(19,FER609G,FER211F): + Slot(FER609G,19) + Slot(FER211F,19)
- <= 1
- SameTaught(19,STA209G,LAN203G): + Slot(LAN203G,19) + Slot(STA209G,19)
- <= 1
- SameTaught(19,LAN410G,LAN209F): + Slot(LAN410G,19) + Slot(LAN209F,19)
- <= 1
- SameTaught(19,LIF633G,LIF227F): + Slot(LIF633G,19) + Slot(LIF227F,19)
- <= 1
- SameTaught(19,LIF410G,LIF243F): + Slot(LIF410G,19) + Slot(LIF243F,19)
- <= 1
- SameTaught(19,STA203G,MAS201F): + Slot(STA203G,19) + Slot(MAS201F,19)
- <= 1
- SameTaught(20,EDL206G,EDL201G): + Slot(EDL201G,20) + Slot(EDL206G,20)
- <= 1
- SameTaught(20,RAF402G,EDL401G): + Slot(RAF402G,20) + Slot(EDL401G,20)
- <= 1
- SameTaught(20,EFN214G,EFN205G): + Slot(EFN205G,20) + Slot(EFN214G,20)
- <= 1
- SameTaught(20,FER409G,FER210F): + Slot(FER409G,20) + Slot(FER210F,20)
- <= 1
- SameTaught(20,FER609G,FER211F): + Slot(FER609G,20) + Slot(FER211F,20)
- <= 1
- SameTaught(20,STA209G,LAN203G): + Slot(LAN203G,20) + Slot(STA209G,20)
- <= 1
- SameTaught(20,LAN410G,LAN209F): + Slot(LAN410G,20) + Slot(LAN209F,20)
- <= 1
- SameTaught(20,LIF633G,LIF227F): + Slot(LIF633G,20) + Slot(LIF227F,20)
- <= 1
- SameTaught(20,LIF410G,LIF243F): + Slot(LIF410G,20) + Slot(LIF243F,20)
- <= 1
- SameTaught(20,STA203G,MAS201F): + Slot(STA203G,20) + Slot(MAS201F,20)
- <= 1
- SameTaught(21,EDL206G,EDL201G): + Slot(EDL201G,21) + Slot(EDL206G,21)
- <= 1
- SameTaught(21,RAF402G,EDL401G): + Slot(RAF402G,21) + Slot(EDL401G,21)
- <= 1
- SameTaught(21,EFN214G,EFN205G): + Slot(EFN205G,21) + Slot(EFN214G,21)
- <= 1
- SameTaught(21,FER409G,FER210F): + Slot(FER409G,21) + Slot(FER210F,21)
- <= 1
- SameTaught(21,FER609G,FER211F): + Slot(FER609G,21) + Slot(FER211F,21)
- <= 1
- SameTaught(21,STA209G,LAN203G): + Slot(LAN203G,21) + Slot(STA209G,21)
- <= 1
- SameTaught(21,LAN410G,LAN209F): + Slot(LAN410G,21) + Slot(LAN209F,21)
- <= 1
- SameTaught(21,LIF633G,LIF227F): + Slot(LIF633G,21) + Slot(LIF227F,21)
- <= 1
- SameTaught(21,LIF410G,LIF243F): + Slot(LIF410G,21) + Slot(LIF243F,21)
- <= 1
- SameTaught(21,STA203G,MAS201F): + Slot(STA203G,21) + Slot(MAS201F,21)
- <= 1
- SameTaught(22,EDL206G,EDL201G): + Slot(EDL201G,22) + Slot(EDL206G,22)
- <= 1
- SameTaught(22,RAF402G,EDL401G): + Slot(RAF402G,22) + Slot(EDL401G,22)
- <= 1
- SameTaught(22,EFN214G,EFN205G): + Slot(EFN205G,22) + Slot(EFN214G,22)
- <= 1
- SameTaught(22,FER409G,FER210F): + Slot(FER409G,22) + Slot(FER210F,22)
- <= 1
- SameTaught(22,FER609G,FER211F): + Slot(FER609G,22) + Slot(FER211F,22)
- <= 1
- SameTaught(22,STA209G,LAN203G): + Slot(LAN203G,22) + Slot(STA209G,22)
- <= 1
- SameTaught(22,LAN410G,LAN209F): + Slot(LAN410G,22) + Slot(LAN209F,22)
- <= 1
- SameTaught(22,LIF633G,LIF227F): + Slot(LIF633G,22) + Slot(LIF227F,22)
- <= 1
- SameTaught(22,LIF410G,LIF243F): + Slot(LIF410G,22) + Slot(LIF243F,22)
- <= 1
- SameTaught(22,STA203G,MAS201F): + Slot(STA203G,22) + Slot(MAS201F,22)
- <= 1
+ SameTaught(62,EDL201G,EDL401G,5): + Slot(EDL401G,5) + Slot(EDL201G,5)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,6): + Slot(EDL401G,6) + Slot(EDL201G,6)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,7): + Slot(EDL401G,7) + Slot(EDL201G,7)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,8): + Slot(EDL401G,8) + Slot(EDL201G,8)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,9): + Slot(EDL401G,9) + Slot(EDL201G,9)
+ <= 1
+ SameTaught(62,EDL201G,EDL401G,10): + Slot(EDL401G,10)
+ + Slot(EDL201G,10) <= 1
+ SameTaught(62,EDL201G,EDL401G,11): + Slot(EDL401G,11)
+ + Slot(EDL201G,11) <= 1
+ SameTaught(62,EDL201G,EDL401G,12): + Slot(EDL401G,12)
+ + Slot(EDL201G,12) <= 1
+ SameTaught(62,EDL201G,EDL401G,13): + Slot(EDL401G,13)
+ + Slot(EDL201G,13) <= 1
+ SameTaught(62,EDL201G,EDL401G,14): + Slot(EDL401G,14)
+ + Slot(EDL201G,14) <= 1
+ SameTaught(62,EDL201G,EDL401G,15): + Slot(EDL401G,15)
+ + Slot(EDL201G,15) <= 1
+ SameTaught(62,EDL201G,EDL401G,16): + Slot(EDL401G,16)
+ + Slot(EDL201G,16) <= 1
+ SameTaught(62,EDL201G,EDL401G,17): + Slot(EDL401G,17)
+ + Slot(EDL201G,17) <= 1
+ SameTaught(62,EDL201G,EDL401G,18): + Slot(EDL401G,18)
+ + Slot(EDL201G,18) <= 1
+ SameTaught(62,EDL201G,EDL401G,19): + Slot(EDL401G,19)
+ + Slot(EDL201G,19) <= 1
+ SameTaught(62,EDL201G,EDL401G,20): + Slot(EDL401G,20)
+ + Slot(EDL201G,20) <= 1
+ SameTaught(62,EDL201G,EDL401G,21): + Slot(EDL401G,21)
+ + Slot(EDL201G,21) <= 1
+ SameTaught(62,EDL201G,EDL401G,22): + Slot(EDL401G,22)
+ + Slot(EDL201G,22) <= 1
+ SameTaught(62,EDL401G,EDL201G,1): + Slot(EDL401G,1) + Slot(EDL201G,1)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,2): + Slot(EDL401G,2) + Slot(EDL201G,2)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,3): + Slot(EDL401G,3) + Slot(EDL201G,3)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,4): + Slot(EDL401G,4) + Slot(EDL201G,4)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,5): + Slot(EDL401G,5) + Slot(EDL201G,5)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,6): + Slot(EDL401G,6) + Slot(EDL201G,6)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,7): + Slot(EDL401G,7) + Slot(EDL201G,7)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,8): + Slot(EDL401G,8) + Slot(EDL201G,8)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,9): + Slot(EDL401G,9) + Slot(EDL201G,9)
+ <= 1
+ SameTaught(62,EDL401G,EDL201G,10): + Slot(EDL401G,10)
+ + Slot(EDL201G,10) <= 1
+ SameTaught(62,EDL401G,EDL201G,11): + Slot(EDL401G,11)
+ + Slot(EDL201G,11) <= 1
+ SameTaught(62,EDL401G,EDL201G,12): + Slot(EDL401G,12)
+ + Slot(EDL201G,12) <= 1
+ SameTaught(62,EDL401G,EDL201G,13): + Slot(EDL401G,13)
+ + Slot(EDL201G,13) <= 1
+ SameTaught(62,EDL401G,EDL201G,14): + Slot(EDL401G,14)
+ + Slot(EDL201G,14) <= 1
+ SameTaught(62,EDL401G,EDL201G,15): + Slot(EDL401G,15)
+ + Slot(EDL201G,15) <= 1
+ SameTaught(62,EDL401G,EDL201G,16): + Slot(EDL401G,16)
+ + Slot(EDL201G,16) <= 1
+ SameTaught(62,EDL401G,EDL201G,17): + Slot(EDL401G,17)
+ + Slot(EDL201G,17) <= 1
+ SameTaught(62,EDL401G,EDL201G,18): + Slot(EDL401G,18)
+ + Slot(EDL201G,18) <= 1
+ SameTaught(62,EDL401G,EDL201G,19): + Slot(EDL401G,19)
+ + Slot(EDL201G,19) <= 1
+ SameTaught(62,EDL401G,EDL201G,20): + Slot(EDL401G,20)
+ + Slot(EDL201G,20) <= 1
+ SameTaught(62,EDL401G,EDL201G,21): + Slot(EDL401G,21)
+ + Slot(EDL201G,21) <= 1
+ SameTaught(62,EDL401G,EDL201G,22): + Slot(EDL401G,22)
+ + Slot(EDL201G,22) <= 1
+ SameTaught(63,EDL401G,RAF402G,1): + Slot(RAF402G,1) + Slot(EDL401G,1)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,2): + Slot(RAF402G,2) + Slot(EDL401G,2)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,3): + Slot(RAF402G,3) + Slot(EDL401G,3)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,4): + Slot(RAF402G,4) + Slot(EDL401G,4)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,5): + Slot(RAF402G,5) + Slot(EDL401G,5)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,6): + Slot(RAF402G,6) + Slot(EDL401G,6)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,7): + Slot(RAF402G,7) + Slot(EDL401G,7)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,8): + Slot(RAF402G,8) + Slot(EDL401G,8)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,9): + Slot(RAF402G,9) + Slot(EDL401G,9)
+ <= 1
+ SameTaught(63,EDL401G,RAF402G,10): + Slot(RAF402G,10)
+ + Slot(EDL401G,10) <= 1
+ SameTaught(63,EDL401G,RAF402G,11): + Slot(RAF402G,11)
+ + Slot(EDL401G,11) <= 1
+ SameTaught(63,EDL401G,RAF402G,12): + Slot(RAF402G,12)
+ + Slot(EDL401G,12) <= 1
+ SameTaught(63,EDL401G,RAF402G,13): + Slot(RAF402G,13)
+ + Slot(EDL401G,13) <= 1
+ SameTaught(63,EDL401G,RAF402G,14): + Slot(RAF402G,14)
+ + Slot(EDL401G,14) <= 1
+ SameTaught(63,EDL401G,RAF402G,15): + Slot(RAF402G,15)
+ + Slot(EDL401G,15) <= 1
+ SameTaught(63,EDL401G,RAF402G,16): + Slot(RAF402G,16)
+ + Slot(EDL401G,16) <= 1
+ SameTaught(63,EDL401G,RAF402G,17): + Slot(RAF402G,17)
+ + Slot(EDL401G,17) <= 1
+ SameTaught(63,EDL401G,RAF402G,18): + Slot(RAF402G,18)
+ + Slot(EDL401G,18) <= 1
+ SameTaught(63,EDL401G,RAF402G,19): + Slot(RAF402G,19)
+ + Slot(EDL401G,19) <= 1
+ SameTaught(63,EDL401G,RAF402G,20): + Slot(RAF402G,20)
+ + Slot(EDL401G,20) <= 1
+ SameTaught(63,EDL401G,RAF402G,21): + Slot(RAF402G,21)
+ + Slot(EDL401G,21) <= 1
+ SameTaught(63,EDL401G,RAF402G,22): + Slot(RAF402G,22)
+ + Slot(EDL401G,22) <= 1
+ SameTaught(63,RAF402G,EDL401G,1): + Slot(RAF402G,1) + Slot(EDL401G,1)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,2): + Slot(RAF402G,2) + Slot(EDL401G,2)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,3): + Slot(RAF402G,3) + Slot(EDL401G,3)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,4): + Slot(RAF402G,4) + Slot(EDL401G,4)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,5): + Slot(RAF402G,5) + Slot(EDL401G,5)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,6): + Slot(RAF402G,6) + Slot(EDL401G,6)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,7): + Slot(RAF402G,7) + Slot(EDL401G,7)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,8): + Slot(RAF402G,8) + Slot(EDL401G,8)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,9): + Slot(RAF402G,9) + Slot(EDL401G,9)
+ <= 1
+ SameTaught(63,RAF402G,EDL401G,10): + Slot(RAF402G,10)
+ + Slot(EDL401G,10) <= 1
+ SameTaught(63,RAF402G,EDL401G,11): + Slot(RAF402G,11)
+ + Slot(EDL401G,11) <= 1
+ SameTaught(63,RAF402G,EDL401G,12): + Slot(RAF402G,12)
+ + Slot(EDL401G,12) <= 1
+ SameTaught(63,RAF402G,EDL401G,13): + Slot(RAF402G,13)
+ + Slot(EDL401G,13) <= 1
+ SameTaught(63,RAF402G,EDL401G,14): + Slot(RAF402G,14)
+ + Slot(EDL401G,14) <= 1
+ SameTaught(63,RAF402G,EDL401G,15): + Slot(RAF402G,15)
+ + Slot(EDL401G,15) <= 1
+ SameTaught(63,RAF402G,EDL401G,16): + Slot(RAF402G,16)
+ + Slot(EDL401G,16) <= 1
+ SameTaught(63,RAF402G,EDL401G,17): + Slot(RAF402G,17)
+ + Slot(EDL401G,17) <= 1
+ SameTaught(63,RAF402G,EDL401G,18): + Slot(RAF402G,18)
+ + Slot(EDL401G,18) <= 1
+ SameTaught(63,RAF402G,EDL401G,19): + Slot(RAF402G,19)
+ + Slot(EDL401G,19) <= 1
+ SameTaught(63,RAF402G,EDL401G,20): + Slot(RAF402G,20)
+ + Slot(EDL401G,20) <= 1
+ SameTaught(63,RAF402G,EDL401G,21): + Slot(RAF402G,21)
+ + Slot(EDL401G,21) <= 1
+ SameTaught(63,RAF402G,EDL401G,22): + Slot(RAF402G,22)
+ + Slot(EDL401G,22) <= 1
+ SameTaught(64,EFN205G,EFN214G,1): + Slot(EFN205G,1) + Slot(EFN214G,1)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,2): + Slot(EFN205G,2) + Slot(EFN214G,2)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,3): + Slot(EFN205G,3) + Slot(EFN214G,3)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,4): + Slot(EFN205G,4) + Slot(EFN214G,4)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,5): + Slot(EFN205G,5) + Slot(EFN214G,5)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,6): + Slot(EFN205G,6) + Slot(EFN214G,6)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,7): + Slot(EFN205G,7) + Slot(EFN214G,7)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,8): + Slot(EFN205G,8) + Slot(EFN214G,8)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,9): + Slot(EFN205G,9) + Slot(EFN214G,9)
+ <= 1
+ SameTaught(64,EFN205G,EFN214G,10): + Slot(EFN205G,10)
+ + Slot(EFN214G,10) <= 1
+ SameTaught(64,EFN205G,EFN214G,11): + Slot(EFN205G,11)
+ + Slot(EFN214G,11) <= 1
+ SameTaught(64,EFN205G,EFN214G,12): + Slot(EFN205G,12)
+ + Slot(EFN214G,12) <= 1
+ SameTaught(64,EFN205G,EFN214G,13): + Slot(EFN205G,13)
+ + Slot(EFN214G,13) <= 1
+ SameTaught(64,EFN205G,EFN214G,14): + Slot(EFN205G,14)
+ + Slot(EFN214G,14) <= 1
+ SameTaught(64,EFN205G,EFN214G,15): + Slot(EFN205G,15)
+ + Slot(EFN214G,15) <= 1
+ SameTaught(64,EFN205G,EFN214G,16): + Slot(EFN205G,16)
+ + Slot(EFN214G,16) <= 1
+ SameTaught(64,EFN205G,EFN214G,17): + Slot(EFN205G,17)
+ + Slot(EFN214G,17) <= 1
+ SameTaught(64,EFN205G,EFN214G,18): + Slot(EFN205G,18)
+ + Slot(EFN214G,18) <= 1
+ SameTaught(64,EFN205G,EFN214G,19): + Slot(EFN205G,19)
+ + Slot(EFN214G,19) <= 1
+ SameTaught(64,EFN205G,EFN214G,20): + Slot(EFN205G,20)
+ + Slot(EFN214G,20) <= 1
+ SameTaught(64,EFN205G,EFN214G,21): + Slot(EFN205G,21)
+ + Slot(EFN214G,21) <= 1
+ SameTaught(64,EFN205G,EFN214G,22): + Slot(EFN205G,22)
+ + Slot(EFN214G,22) <= 1
+ SameTaught(64,EFN214G,EFN205G,1): + Slot(EFN205G,1) + Slot(EFN214G,1)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,2): + Slot(EFN205G,2) + Slot(EFN214G,2)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,3): + Slot(EFN205G,3) + Slot(EFN214G,3)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,4): + Slot(EFN205G,4) + Slot(EFN214G,4)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,5): + Slot(EFN205G,5) + Slot(EFN214G,5)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,6): + Slot(EFN205G,6) + Slot(EFN214G,6)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,7): + Slot(EFN205G,7) + Slot(EFN214G,7)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,8): + Slot(EFN205G,8) + Slot(EFN214G,8)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,9): + Slot(EFN205G,9) + Slot(EFN214G,9)
+ <= 1
+ SameTaught(64,EFN214G,EFN205G,10): + Slot(EFN205G,10)
+ + Slot(EFN214G,10) <= 1
+ SameTaught(64,EFN214G,EFN205G,11): + Slot(EFN205G,11)
+ + Slot(EFN214G,11) <= 1
+ SameTaught(64,EFN214G,EFN205G,12): + Slot(EFN205G,12)
+ + Slot(EFN214G,12) <= 1
+ SameTaught(64,EFN214G,EFN205G,13): + Slot(EFN205G,13)
+ + Slot(EFN214G,13) <= 1
+ SameTaught(64,EFN214G,EFN205G,14): + Slot(EFN205G,14)
+ + Slot(EFN214G,14) <= 1
+ SameTaught(64,EFN214G,EFN205G,15): + Slot(EFN205G,15)
+ + Slot(EFN214G,15) <= 1
+ SameTaught(64,EFN214G,EFN205G,16): + Slot(EFN205G,16)
+ + Slot(EFN214G,16) <= 1
+ SameTaught(64,EFN214G,EFN205G,17): + Slot(EFN205G,17)
+ + Slot(EFN214G,17) <= 1
+ SameTaught(64,EFN214G,EFN205G,18): + Slot(EFN205G,18)
+ + Slot(EFN214G,18) <= 1
+ SameTaught(64,EFN214G,EFN205G,19): + Slot(EFN205G,19)
+ + Slot(EFN214G,19) <= 1
+ SameTaught(64,EFN214G,EFN205G,20): + Slot(EFN205G,20)
+ + Slot(EFN214G,20) <= 1
+ SameTaught(64,EFN214G,EFN205G,21): + Slot(EFN205G,21)
+ + Slot(EFN214G,21) <= 1
+ SameTaught(64,EFN214G,EFN205G,22): + Slot(EFN205G,22)
+ + Slot(EFN214G,22) <= 1
+ SameTaught(65,FER210F,FER409G,1): + Slot(FER409G,1) + Slot(FER210F,1)
+ <= 1
+ SameTaught(65,FER210F,FER409G,2): + Slot(FER409G,2) + Slot(FER210F,2)
+ <= 1
+ SameTaught(65,FER210F,FER409G,3): + Slot(FER409G,3) + Slot(FER210F,3)
+ <= 1
+ SameTaught(65,FER210F,FER409G,4): + Slot(FER409G,4) + Slot(FER210F,4)
+ <= 1
+ SameTaught(65,FER210F,FER409G,5): + Slot(FER409G,5) + Slot(FER210F,5)
+ <= 1
+ SameTaught(65,FER210F,FER409G,6): + Slot(FER409G,6) + Slot(FER210F,6)
+ <= 1
+ SameTaught(65,FER210F,FER409G,7): + Slot(FER409G,7) + Slot(FER210F,7)
+ <= 1
+ SameTaught(65,FER210F,FER409G,8): + Slot(FER409G,8) + Slot(FER210F,8)
+ <= 1
+ SameTaught(65,FER210F,FER409G,9): + Slot(FER409G,9) + Slot(FER210F,9)
+ <= 1
+ SameTaught(65,FER210F,FER409G,10): + Slot(FER409G,10)
+ + Slot(FER210F,10) <= 1
+ SameTaught(65,FER210F,FER409G,11): + Slot(FER409G,11)
+ + Slot(FER210F,11) <= 1
+ SameTaught(65,FER210F,FER409G,12): + Slot(FER409G,12)
+ + Slot(FER210F,12) <= 1
+ SameTaught(65,FER210F,FER409G,13): + Slot(FER409G,13)
+ + Slot(FER210F,13) <= 1
+ SameTaught(65,FER210F,FER409G,14): + Slot(FER409G,14)
+ + Slot(FER210F,14) <= 1
+ SameTaught(65,FER210F,FER409G,15): + Slot(FER409G,15)
+ + Slot(FER210F,15) <= 1
+ SameTaught(65,FER210F,FER409G,16): + Slot(FER409G,16)
+ + Slot(FER210F,16) <= 1
+ SameTaught(65,FER210F,FER409G,17): + Slot(FER409G,17)
+ + Slot(FER210F,17) <= 1
+ SameTaught(65,FER210F,FER409G,18): + Slot(FER409G,18)
+ + Slot(FER210F,18) <= 1
+ SameTaught(65,FER210F,FER409G,19): + Slot(FER409G,19)
+ + Slot(FER210F,19) <= 1
+ SameTaught(65,FER210F,FER409G,20): + Slot(FER409G,20)
+ + Slot(FER210F,20) <= 1
+ SameTaught(65,FER210F,FER409G,21): + Slot(FER409G,21)
+ + Slot(FER210F,21) <= 1
+ SameTaught(65,FER210F,FER409G,22): + Slot(FER409G,22)
+ + Slot(FER210F,22) <= 1
+ SameTaught(65,FER409G,FER210F,1): + Slot(FER409G,1) + Slot(FER210F,1)
+ <= 1
+ SameTaught(65,FER409G,FER210F,2): + Slot(FER409G,2) + Slot(FER210F,2)
+ <= 1
+ SameTaught(65,FER409G,FER210F,3): + Slot(FER409G,3) + Slot(FER210F,3)
+ <= 1
+ SameTaught(65,FER409G,FER210F,4): + Slot(FER409G,4) + Slot(FER210F,4)
+ <= 1
+ SameTaught(65,FER409G,FER210F,5): + Slot(FER409G,5) + Slot(FER210F,5)
+ <= 1
+ SameTaught(65,FER409G,FER210F,6): + Slot(FER409G,6) + Slot(FER210F,6)
+ <= 1
+ SameTaught(65,FER409G,FER210F,7): + Slot(FER409G,7) + Slot(FER210F,7)
+ <= 1
+ SameTaught(65,FER409G,FER210F,8): + Slot(FER409G,8) + Slot(FER210F,8)
+ <= 1
+ SameTaught(65,FER409G,FER210F,9): + Slot(FER409G,9) + Slot(FER210F,9)
+ <= 1
+ SameTaught(65,FER409G,FER210F,10): + Slot(FER409G,10)
+ + Slot(FER210F,10) <= 1
+ SameTaught(65,FER409G,FER210F,11): + Slot(FER409G,11)
+ + Slot(FER210F,11) <= 1
+ SameTaught(65,FER409G,FER210F,12): + Slot(FER409G,12)
+ + Slot(FER210F,12) <= 1
+ SameTaught(65,FER409G,FER210F,13): + Slot(FER409G,13)
+ + Slot(FER210F,13) <= 1
+ SameTaught(65,FER409G,FER210F,14): + Slot(FER409G,14)
+ + Slot(FER210F,14) <= 1
+ SameTaught(65,FER409G,FER210F,15): + Slot(FER409G,15)
+ + Slot(FER210F,15) <= 1
+ SameTaught(65,FER409G,FER210F,16): + Slot(FER409G,16)
+ + Slot(FER210F,16) <= 1
+ SameTaught(65,FER409G,FER210F,17): + Slot(FER409G,17)
+ + Slot(FER210F,17) <= 1
+ SameTaught(65,FER409G,FER210F,18): + Slot(FER409G,18)
+ + Slot(FER210F,18) <= 1
+ SameTaught(65,FER409G,FER210F,19): + Slot(FER409G,19)
+ + Slot(FER210F,19) <= 1
+ SameTaught(65,FER409G,FER210F,20): + Slot(FER409G,20)
+ + Slot(FER210F,20) <= 1
+ SameTaught(65,FER409G,FER210F,21): + Slot(FER409G,21)
+ + Slot(FER210F,21) <= 1
+ SameTaught(65,FER409G,FER210F,22): + Slot(FER409G,22)
+ + Slot(FER210F,22) <= 1
+ SameTaught(66,FER211F,FER609G,1): + Slot(FER609G,1) + Slot(FER211F,1)
+ <= 1
+ SameTaught(66,FER211F,FER609G,2): + Slot(FER609G,2) + Slot(FER211F,2)
+ <= 1
+ SameTaught(66,FER211F,FER609G,3): + Slot(FER609G,3) + Slot(FER211F,3)
+ <= 1
+ SameTaught(66,FER211F,FER609G,4): + Slot(FER609G,4) + Slot(FER211F,4)
+ <= 1
+ SameTaught(66,FER211F,FER609G,5): + Slot(FER609G,5) + Slot(FER211F,5)
+ <= 1
+ SameTaught(66,FER211F,FER609G,6): + Slot(FER609G,6) + Slot(FER211F,6)
+ <= 1
+ SameTaught(66,FER211F,FER609G,7): + Slot(FER609G,7) + Slot(FER211F,7)
+ <= 1
+ SameTaught(66,FER211F,FER609G,8): + Slot(FER609G,8) + Slot(FER211F,8)
+ <= 1
+ SameTaught(66,FER211F,FER609G,9): + Slot(FER609G,9) + Slot(FER211F,9)
+ <= 1
+ SameTaught(66,FER211F,FER609G,10): + Slot(FER609G,10)
+ + Slot(FER211F,10) <= 1
+ SameTaught(66,FER211F,FER609G,11): + Slot(FER609G,11)
+ + Slot(FER211F,11) <= 1
+ SameTaught(66,FER211F,FER609G,12): + Slot(FER609G,12)
+ + Slot(FER211F,12) <= 1
+ SameTaught(66,FER211F,FER609G,13): + Slot(FER609G,13)
+ + Slot(FER211F,13) <= 1
+ SameTaught(66,FER211F,FER609G,14): + Slot(FER609G,14)
+ + Slot(FER211F,14) <= 1
+ SameTaught(66,FER211F,FER609G,15): + Slot(FER609G,15)
+ + Slot(FER211F,15) <= 1
+ SameTaught(66,FER211F,FER609G,16): + Slot(FER609G,16)
+ + Slot(FER211F,16) <= 1
+ SameTaught(66,FER211F,FER609G,17): + Slot(FER609G,17)
+ + Slot(FER211F,17) <= 1
+ SameTaught(66,FER211F,FER609G,18): + Slot(FER609G,18)
+ + Slot(FER211F,18) <= 1
+ SameTaught(66,FER211F,FER609G,19): + Slot(FER609G,19)
+ + Slot(FER211F,19) <= 1
+ SameTaught(66,FER211F,FER609G,20): + Slot(FER609G,20)
+ + Slot(FER211F,20) <= 1
+ SameTaught(66,FER211F,FER609G,21): + Slot(FER609G,21)
+ + Slot(FER211F,21) <= 1
+ SameTaught(66,FER211F,FER609G,22): + Slot(FER609G,22)
+ + Slot(FER211F,22) <= 1
+ SameTaught(66,FER609G,FER211F,1): + Slot(FER609G,1) + Slot(FER211F,1)
+ <= 1
+ SameTaught(66,FER609G,FER211F,2): + Slot(FER609G,2) + Slot(FER211F,2)
+ <= 1
+ SameTaught(66,FER609G,FER211F,3): + Slot(FER609G,3) + Slot(FER211F,3)
+ <= 1
+ SameTaught(66,FER609G,FER211F,4): + Slot(FER609G,4) + Slot(FER211F,4)
+ <= 1
+ SameTaught(66,FER609G,FER211F,5): + Slot(FER609G,5) + Slot(FER211F,5)
+ <= 1
+ SameTaught(66,FER609G,FER211F,6): + Slot(FER609G,6) + Slot(FER211F,6)
+ <= 1
+ SameTaught(66,FER609G,FER211F,7): + Slot(FER609G,7) + Slot(FER211F,7)
+ <= 1
+ SameTaught(66,FER609G,FER211F,8): + Slot(FER609G,8) + Slot(FER211F,8)
+ <= 1
+ SameTaught(66,FER609G,FER211F,9): + Slot(FER609G,9) + Slot(FER211F,9)
+ <= 1
+ SameTaught(66,FER609G,FER211F,10): + Slot(FER609G,10)
+ + Slot(FER211F,10) <= 1
+ SameTaught(66,FER609G,FER211F,11): + Slot(FER609G,11)
+ + Slot(FER211F,11) <= 1
+ SameTaught(66,FER609G,FER211F,12): + Slot(FER609G,12)
+ + Slot(FER211F,12) <= 1
+ SameTaught(66,FER609G,FER211F,13): + Slot(FER609G,13)
+ + Slot(FER211F,13) <= 1
+ SameTaught(66,FER609G,FER211F,14): + Slot(FER609G,14)
+ + Slot(FER211F,14) <= 1
+ SameTaught(66,FER609G,FER211F,15): + Slot(FER609G,15)
+ + Slot(FER211F,15) <= 1
+ SameTaught(66,FER609G,FER211F,16): + Slot(FER609G,16)
+ + Slot(FER211F,16) <= 1
+ SameTaught(66,FER609G,FER211F,17): + Slot(FER609G,17)
+ + Slot(FER211F,17) <= 1
+ SameTaught(66,FER609G,FER211F,18): + Slot(FER609G,18)
+ + Slot(FER211F,18) <= 1
+ SameTaught(66,FER609G,FER211F,19): + Slot(FER609G,19)
+ + Slot(FER211F,19) <= 1
+ SameTaught(66,FER609G,FER211F,20): + Slot(FER609G,20)
+ + Slot(FER211F,20) <= 1
+ SameTaught(66,FER609G,FER211F,21): + Slot(FER609G,21)
+ + Slot(FER211F,21) <= 1
+ SameTaught(66,FER609G,FER211F,22): + Slot(FER609G,22)
+ + Slot(FER211F,22) <= 1
+ SameTaught(67,LAN203G,STA209G,1): + Slot(LAN203G,1) + Slot(STA209G,1)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,2): + Slot(LAN203G,2) + Slot(STA209G,2)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,3): + Slot(LAN203G,3) + Slot(STA209G,3)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,4): + Slot(LAN203G,4) + Slot(STA209G,4)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,5): + Slot(LAN203G,5) + Slot(STA209G,5)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,6): + Slot(LAN203G,6) + Slot(STA209G,6)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,7): + Slot(LAN203G,7) + Slot(STA209G,7)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,8): + Slot(LAN203G,8) + Slot(STA209G,8)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,9): + Slot(LAN203G,9) + Slot(STA209G,9)
+ <= 1
+ SameTaught(67,LAN203G,STA209G,10): + Slot(LAN203G,10)
+ + Slot(STA209G,10) <= 1
+ SameTaught(67,LAN203G,STA209G,11): + Slot(LAN203G,11)
+ + Slot(STA209G,11) <= 1
+ SameTaught(67,LAN203G,STA209G,12): + Slot(LAN203G,12)
+ + Slot(STA209G,12) <= 1
+ SameTaught(67,LAN203G,STA209G,13): + Slot(LAN203G,13)
+ + Slot(STA209G,13) <= 1
+ SameTaught(67,LAN203G,STA209G,14): + Slot(LAN203G,14)
+ + Slot(STA209G,14) <= 1
+ SameTaught(67,LAN203G,STA209G,15): + Slot(LAN203G,15)
+ + Slot(STA209G,15) <= 1
+ SameTaught(67,LAN203G,STA209G,16): + Slot(LAN203G,16)
+ + Slot(STA209G,16) <= 1
+ SameTaught(67,LAN203G,STA209G,17): + Slot(LAN203G,17)
+ + Slot(STA209G,17) <= 1
+ SameTaught(67,LAN203G,STA209G,18): + Slot(LAN203G,18)
+ + Slot(STA209G,18) <= 1
+ SameTaught(67,LAN203G,STA209G,19): + Slot(LAN203G,19)
+ + Slot(STA209G,19) <= 1
+ SameTaught(67,LAN203G,STA209G,20): + Slot(LAN203G,20)
+ + Slot(STA209G,20) <= 1
+ SameTaught(67,LAN203G,STA209G,21): + Slot(LAN203G,21)
+ + Slot(STA209G,21) <= 1
+ SameTaught(67,LAN203G,STA209G,22): + Slot(LAN203G,22)
+ + Slot(STA209G,22) <= 1
+ SameTaught(67,STA209G,LAN203G,1): + Slot(LAN203G,1) + Slot(STA209G,1)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,2): + Slot(LAN203G,2) + Slot(STA209G,2)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,3): + Slot(LAN203G,3) + Slot(STA209G,3)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,4): + Slot(LAN203G,4) + Slot(STA209G,4)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,5): + Slot(LAN203G,5) + Slot(STA209G,5)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,6): + Slot(LAN203G,6) + Slot(STA209G,6)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,7): + Slot(LAN203G,7) + Slot(STA209G,7)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,8): + Slot(LAN203G,8) + Slot(STA209G,8)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,9): + Slot(LAN203G,9) + Slot(STA209G,9)
+ <= 1
+ SameTaught(67,STA209G,LAN203G,10): + Slot(LAN203G,10)
+ + Slot(STA209G,10) <= 1
+ SameTaught(67,STA209G,LAN203G,11): + Slot(LAN203G,11)
+ + Slot(STA209G,11) <= 1
+ SameTaught(67,STA209G,LAN203G,12): + Slot(LAN203G,12)
+ + Slot(STA209G,12) <= 1
+ SameTaught(67,STA209G,LAN203G,13): + Slot(LAN203G,13)
+ + Slot(STA209G,13) <= 1
+ SameTaught(67,STA209G,LAN203G,14): + Slot(LAN203G,14)
+ + Slot(STA209G,14) <= 1
+ SameTaught(67,STA209G,LAN203G,15): + Slot(LAN203G,15)
+ + Slot(STA209G,15) <= 1
+ SameTaught(67,STA209G,LAN203G,16): + Slot(LAN203G,16)
+ + Slot(STA209G,16) <= 1
+ SameTaught(67,STA209G,LAN203G,17): + Slot(LAN203G,17)
+ + Slot(STA209G,17) <= 1
+ SameTaught(67,STA209G,LAN203G,18): + Slot(LAN203G,18)
+ + Slot(STA209G,18) <= 1
+ SameTaught(67,STA209G,LAN203G,19): + Slot(LAN203G,19)
+ + Slot(STA209G,19) <= 1
+ SameTaught(67,STA209G,LAN203G,20): + Slot(LAN203G,20)
+ + Slot(STA209G,20) <= 1
+ SameTaught(67,STA209G,LAN203G,21): + Slot(LAN203G,21)
+ + Slot(STA209G,21) <= 1
+ SameTaught(67,STA209G,LAN203G,22): + Slot(LAN203G,22)
+ + Slot(STA209G,22) <= 1
+ SameTaught(68,LAN209F,LAN410G,1): + Slot(LAN410G,1) + Slot(LAN209F,1)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,2): + Slot(LAN410G,2) + Slot(LAN209F,2)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,3): + Slot(LAN410G,3) + Slot(LAN209F,3)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,4): + Slot(LAN410G,4) + Slot(LAN209F,4)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,5): + Slot(LAN410G,5) + Slot(LAN209F,5)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,6): + Slot(LAN410G,6) + Slot(LAN209F,6)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,7): + Slot(LAN410G,7) + Slot(LAN209F,7)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,8): + Slot(LAN410G,8) + Slot(LAN209F,8)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,9): + Slot(LAN410G,9) + Slot(LAN209F,9)
+ <= 1
+ SameTaught(68,LAN209F,LAN410G,10): + Slot(LAN410G,10)
+ + Slot(LAN209F,10) <= 1
+ SameTaught(68,LAN209F,LAN410G,11): + Slot(LAN410G,11)
+ + Slot(LAN209F,11) <= 1
+ SameTaught(68,LAN209F,LAN410G,12): + Slot(LAN410G,12)
+ + Slot(LAN209F,12) <= 1
+ SameTaught(68,LAN209F,LAN410G,13): + Slot(LAN410G,13)
+ + Slot(LAN209F,13) <= 1
+ SameTaught(68,LAN209F,LAN410G,14): + Slot(LAN410G,14)
+ + Slot(LAN209F,14) <= 1
+ SameTaught(68,LAN209F,LAN410G,15): + Slot(LAN410G,15)
+ + Slot(LAN209F,15) <= 1
+ SameTaught(68,LAN209F,LAN410G,16): + Slot(LAN410G,16)
+ + Slot(LAN209F,16) <= 1
+ SameTaught(68,LAN209F,LAN410G,17): + Slot(LAN410G,17)
+ + Slot(LAN209F,17) <= 1
+ SameTaught(68,LAN209F,LAN410G,18): + Slot(LAN410G,18)
+ + Slot(LAN209F,18) <= 1
+ SameTaught(68,LAN209F,LAN410G,19): + Slot(LAN410G,19)
+ + Slot(LAN209F,19) <= 1
+ SameTaught(68,LAN209F,LAN410G,20): + Slot(LAN410G,20)
+ + Slot(LAN209F,20) <= 1
+ SameTaught(68,LAN209F,LAN410G,21): + Slot(LAN410G,21)
+ + Slot(LAN209F,21) <= 1
+ SameTaught(68,LAN209F,LAN410G,22): + Slot(LAN410G,22)
+ + Slot(LAN209F,22) <= 1
+ SameTaught(68,LAN410G,LAN209F,1): + Slot(LAN410G,1) + Slot(LAN209F,1)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,2): + Slot(LAN410G,2) + Slot(LAN209F,2)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,3): + Slot(LAN410G,3) + Slot(LAN209F,3)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,4): + Slot(LAN410G,4) + Slot(LAN209F,4)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,5): + Slot(LAN410G,5) + Slot(LAN209F,5)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,6): + Slot(LAN410G,6) + Slot(LAN209F,6)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,7): + Slot(LAN410G,7) + Slot(LAN209F,7)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,8): + Slot(LAN410G,8) + Slot(LAN209F,8)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,9): + Slot(LAN410G,9) + Slot(LAN209F,9)
+ <= 1
+ SameTaught(68,LAN410G,LAN209F,10): + Slot(LAN410G,10)
+ + Slot(LAN209F,10) <= 1
+ SameTaught(68,LAN410G,LAN209F,11): + Slot(LAN410G,11)
+ + Slot(LAN209F,11) <= 1
+ SameTaught(68,LAN410G,LAN209F,12): + Slot(LAN410G,12)
+ + Slot(LAN209F,12) <= 1
+ SameTaught(68,LAN410G,LAN209F,13): + Slot(LAN410G,13)
+ + Slot(LAN209F,13) <= 1
+ SameTaught(68,LAN410G,LAN209F,14): + Slot(LAN410G,14)
+ + Slot(LAN209F,14) <= 1
+ SameTaught(68,LAN410G,LAN209F,15): + Slot(LAN410G,15)
+ + Slot(LAN209F,15) <= 1
+ SameTaught(68,LAN410G,LAN209F,16): + Slot(LAN410G,16)
+ + Slot(LAN209F,16) <= 1
+ SameTaught(68,LAN410G,LAN209F,17): + Slot(LAN410G,17)
+ + Slot(LAN209F,17) <= 1
+ SameTaught(68,LAN410G,LAN209F,18): + Slot(LAN410G,18)
+ + Slot(LAN209F,18) <= 1
+ SameTaught(68,LAN410G,LAN209F,19): + Slot(LAN410G,19)
+ + Slot(LAN209F,19) <= 1
+ SameTaught(68,LAN410G,LAN209F,20): + Slot(LAN410G,20)
+ + Slot(LAN209F,20) <= 1
+ SameTaught(68,LAN410G,LAN209F,21): + Slot(LAN410G,21)
+ + Slot(LAN209F,21) <= 1
+ SameTaught(68,LAN410G,LAN209F,22): + Slot(LAN410G,22)
+ + Slot(LAN209F,22) <= 1
+ SameTaught(69,LIF227F,LIF633G,1): + Slot(LIF633G,1) + Slot(LIF227F,1)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,2): + Slot(LIF633G,2) + Slot(LIF227F,2)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,3): + Slot(LIF633G,3) + Slot(LIF227F,3)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,4): + Slot(LIF633G,4) + Slot(LIF227F,4)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,5): + Slot(LIF633G,5) + Slot(LIF227F,5)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,6): + Slot(LIF633G,6) + Slot(LIF227F,6)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,7): + Slot(LIF633G,7) + Slot(LIF227F,7)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,8): + Slot(LIF633G,8) + Slot(LIF227F,8)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,9): + Slot(LIF633G,9) + Slot(LIF227F,9)
+ <= 1
+ SameTaught(69,LIF227F,LIF633G,10): + Slot(LIF633G,10)
+ + Slot(LIF227F,10) <= 1
+ SameTaught(69,LIF227F,LIF633G,11): + Slot(LIF633G,11)
+ + Slot(LIF227F,11) <= 1
+ SameTaught(69,LIF227F,LIF633G,12): + Slot(LIF633G,12)
+ + Slot(LIF227F,12) <= 1
+ SameTaught(69,LIF227F,LIF633G,13): + Slot(LIF633G,13)
+ + Slot(LIF227F,13) <= 1
+ SameTaught(69,LIF227F,LIF633G,14): + Slot(LIF633G,14)
+ + Slot(LIF227F,14) <= 1
+ SameTaught(69,LIF227F,LIF633G,15): + Slot(LIF633G,15)
+ + Slot(LIF227F,15) <= 1
+ SameTaught(69,LIF227F,LIF633G,16): + Slot(LIF633G,16)
+ + Slot(LIF227F,16) <= 1
+ SameTaught(69,LIF227F,LIF633G,17): + Slot(LIF633G,17)
+ + Slot(LIF227F,17) <= 1
+ SameTaught(69,LIF227F,LIF633G,18): + Slot(LIF633G,18)
+ + Slot(LIF227F,18) <= 1
+ SameTaught(69,LIF227F,LIF633G,19): + Slot(LIF633G,19)
+ + Slot(LIF227F,19) <= 1
+ SameTaught(69,LIF227F,LIF633G,20): + Slot(LIF633G,20)
+ + Slot(LIF227F,20) <= 1
+ SameTaught(69,LIF227F,LIF633G,21): + Slot(LIF633G,21)
+ + Slot(LIF227F,21) <= 1
+ SameTaught(69,LIF227F,LIF633G,22): + Slot(LIF633G,22)
+ + Slot(LIF227F,22) <= 1
+ SameTaught(69,LIF633G,LIF227F,1): + Slot(LIF633G,1) + Slot(LIF227F,1)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,2): + Slot(LIF633G,2) + Slot(LIF227F,2)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,3): + Slot(LIF633G,3) + Slot(LIF227F,3)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,4): + Slot(LIF633G,4) + Slot(LIF227F,4)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,5): + Slot(LIF633G,5) + Slot(LIF227F,5)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,6): + Slot(LIF633G,6) + Slot(LIF227F,6)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,7): + Slot(LIF633G,7) + Slot(LIF227F,7)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,8): + Slot(LIF633G,8) + Slot(LIF227F,8)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,9): + Slot(LIF633G,9) + Slot(LIF227F,9)
+ <= 1
+ SameTaught(69,LIF633G,LIF227F,10): + Slot(LIF633G,10)
+ + Slot(LIF227F,10) <= 1
+ SameTaught(69,LIF633G,LIF227F,11): + Slot(LIF633G,11)
+ + Slot(LIF227F,11) <= 1
+ SameTaught(69,LIF633G,LIF227F,12): + Slot(LIF633G,12)
+ + Slot(LIF227F,12) <= 1
+ SameTaught(69,LIF633G,LIF227F,13): + Slot(LIF633G,13)
+ + Slot(LIF227F,13) <= 1
+ SameTaught(69,LIF633G,LIF227F,14): + Slot(LIF633G,14)
+ + Slot(LIF227F,14) <= 1
+ SameTaught(69,LIF633G,LIF227F,15): + Slot(LIF633G,15)
+ + Slot(LIF227F,15) <= 1
+ SameTaught(69,LIF633G,LIF227F,16): + Slot(LIF633G,16)
+ + Slot(LIF227F,16) <= 1
+ SameTaught(69,LIF633G,LIF227F,17): + Slot(LIF633G,17)
+ + Slot(LIF227F,17) <= 1
+ SameTaught(69,LIF633G,LIF227F,18): + Slot(LIF633G,18)
+ + Slot(LIF227F,18) <= 1
+ SameTaught(69,LIF633G,LIF227F,19): + Slot(LIF633G,19)
+ + Slot(LIF227F,19) <= 1
+ SameTaught(69,LIF633G,LIF227F,20): + Slot(LIF633G,20)
+ + Slot(LIF227F,20) <= 1
+ SameTaught(69,LIF633G,LIF227F,21): + Slot(LIF633G,21)
+ + Slot(LIF227F,21) <= 1
+ SameTaught(69,LIF633G,LIF227F,22): + Slot(LIF633G,22)
+ + Slot(LIF227F,22) <= 1
+ SameTaught(70,LIF243F,LIF410G,1): + Slot(LIF410G,1) + Slot(LIF243F,1)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,2): + Slot(LIF410G,2) + Slot(LIF243F,2)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,3): + Slot(LIF410G,3) + Slot(LIF243F,3)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,4): + Slot(LIF410G,4) + Slot(LIF243F,4)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,5): + Slot(LIF410G,5) + Slot(LIF243F,5)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,6): + Slot(LIF410G,6) + Slot(LIF243F,6)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,7): + Slot(LIF410G,7) + Slot(LIF243F,7)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,8): + Slot(LIF410G,8) + Slot(LIF243F,8)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,9): + Slot(LIF410G,9) + Slot(LIF243F,9)
+ <= 1
+ SameTaught(70,LIF243F,LIF410G,10): + Slot(LIF410G,10)
+ + Slot(LIF243F,10) <= 1
+ SameTaught(70,LIF243F,LIF410G,11): + Slot(LIF410G,11)
+ + Slot(LIF243F,11) <= 1
+ SameTaught(70,LIF243F,LIF410G,12): + Slot(LIF410G,12)
+ + Slot(LIF243F,12) <= 1
+ SameTaught(70,LIF243F,LIF410G,13): + Slot(LIF410G,13)
+ + Slot(LIF243F,13) <= 1
+ SameTaught(70,LIF243F,LIF410G,14): + Slot(LIF410G,14)
+ + Slot(LIF243F,14) <= 1
+ SameTaught(70,LIF243F,LIF410G,15): + Slot(LIF410G,15)
+ + Slot(LIF243F,15) <= 1
+ SameTaught(70,LIF243F,LIF410G,16): + Slot(LIF410G,16)
+ + Slot(LIF243F,16) <= 1
+ SameTaught(70,LIF243F,LIF410G,17): + Slot(LIF410G,17)
+ + Slot(LIF243F,17) <= 1
+ SameTaught(70,LIF243F,LIF410G,18): + Slot(LIF410G,18)
+ + Slot(LIF243F,18) <= 1
+ SameTaught(70,LIF243F,LIF410G,19): + Slot(LIF410G,19)
+ + Slot(LIF243F,19) <= 1
+ SameTaught(70,LIF243F,LIF410G,20): + Slot(LIF410G,20)
+ + Slot(LIF243F,20) <= 1
+ SameTaught(70,LIF243F,LIF410G,21): + Slot(LIF410G,21)
+ + Slot(LIF243F,21) <= 1
+ SameTaught(70,LIF243F,LIF410G,22): + Slot(LIF410G,22)
+ + Slot(LIF243F,22) <= 1
+ SameTaught(70,LIF410G,LIF243F,1): + Slot(LIF410G,1) + Slot(LIF243F,1)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,2): + Slot(LIF410G,2) + Slot(LIF243F,2)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,3): + Slot(LIF410G,3) + Slot(LIF243F,3)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,4): + Slot(LIF410G,4) + Slot(LIF243F,4)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,5): + Slot(LIF410G,5) + Slot(LIF243F,5)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,6): + Slot(LIF410G,6) + Slot(LIF243F,6)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,7): + Slot(LIF410G,7) + Slot(LIF243F,7)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,8): + Slot(LIF410G,8) + Slot(LIF243F,8)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,9): + Slot(LIF410G,9) + Slot(LIF243F,9)
+ <= 1
+ SameTaught(70,LIF410G,LIF243F,10): + Slot(LIF410G,10)
+ + Slot(LIF243F,10) <= 1
+ SameTaught(70,LIF410G,LIF243F,11): + Slot(LIF410G,11)
+ + Slot(LIF243F,11) <= 1
+ SameTaught(70,LIF410G,LIF243F,12): + Slot(LIF410G,12)
+ + Slot(LIF243F,12) <= 1
+ SameTaught(70,LIF410G,LIF243F,13): + Slot(LIF410G,13)
+ + Slot(LIF243F,13) <= 1
+ SameTaught(70,LIF410G,LIF243F,14): + Slot(LIF410G,14)
+ + Slot(LIF243F,14) <= 1
+ SameTaught(70,LIF410G,LIF243F,15): + Slot(LIF410G,15)
+ + Slot(LIF243F,15) <= 1
+ SameTaught(70,LIF410G,LIF243F,16): + Slot(LIF410G,16)
+ + Slot(LIF243F,16) <= 1
+ SameTaught(70,LIF410G,LIF243F,17): + Slot(LIF410G,17)
+ + Slot(LIF243F,17) <= 1
+ SameTaught(70,LIF410G,LIF243F,18): + Slot(LIF410G,18)
+ + Slot(LIF243F,18) <= 1
+ SameTaught(70,LIF410G,LIF243F,19): + Slot(LIF410G,19)
+ + Slot(LIF243F,19) <= 1
+ SameTaught(70,LIF410G,LIF243F,20): + Slot(LIF410G,20)
+ + Slot(LIF243F,20) <= 1
+ SameTaught(70,LIF410G,LIF243F,21): + Slot(LIF410G,21)
+ + Slot(LIF243F,21) <= 1
+ SameTaught(70,LIF410G,LIF243F,22): + Slot(LIF410G,22)
+ + Slot(LIF243F,22) <= 1
+ SameTaught(71,MAS201F,STA203G,1): + Slot(STA203G,1) + Slot(MAS201F,1)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,2): + Slot(STA203G,2) + Slot(MAS201F,2)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,3): + Slot(STA203G,3) + Slot(MAS201F,3)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,4): + Slot(STA203G,4) + Slot(MAS201F,4)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,5): + Slot(STA203G,5) + Slot(MAS201F,5)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,6): + Slot(STA203G,6) + Slot(MAS201F,6)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,7): + Slot(STA203G,7) + Slot(MAS201F,7)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,8): + Slot(STA203G,8) + Slot(MAS201F,8)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,9): + Slot(STA203G,9) + Slot(MAS201F,9)
+ <= 1
+ SameTaught(71,MAS201F,STA203G,10): + Slot(STA203G,10)
+ + Slot(MAS201F,10) <= 1
+ SameTaught(71,MAS201F,STA203G,11): + Slot(STA203G,11)
+ + Slot(MAS201F,11) <= 1
+ SameTaught(71,MAS201F,STA203G,12): + Slot(STA203G,12)
+ + Slot(MAS201F,12) <= 1
+ SameTaught(71,MAS201F,STA203G,13): + Slot(STA203G,13)
+ + Slot(MAS201F,13) <= 1
+ SameTaught(71,MAS201F,STA203G,14): + Slot(STA203G,14)
+ + Slot(MAS201F,14) <= 1
+ SameTaught(71,MAS201F,STA203G,15): + Slot(STA203G,15)
+ + Slot(MAS201F,15) <= 1
+ SameTaught(71,MAS201F,STA203G,16): + Slot(STA203G,16)
+ + Slot(MAS201F,16) <= 1
+ SameTaught(71,MAS201F,STA203G,17): + Slot(STA203G,17)
+ + Slot(MAS201F,17) <= 1
+ SameTaught(71,MAS201F,STA203G,18): + Slot(STA203G,18)
+ + Slot(MAS201F,18) <= 1
+ SameTaught(71,MAS201F,STA203G,19): + Slot(STA203G,19)
+ + Slot(MAS201F,19) <= 1
+ SameTaught(71,MAS201F,STA203G,20): + Slot(STA203G,20)
+ + Slot(MAS201F,20) <= 1
+ SameTaught(71,MAS201F,STA203G,21): + Slot(STA203G,21)
+ + Slot(MAS201F,21) <= 1
+ SameTaught(71,MAS201F,STA203G,22): + Slot(STA203G,22)
+ + Slot(MAS201F,22) <= 1
+ SameTaught(71,STA203G,MAS201F,1): + Slot(STA203G,1) + Slot(MAS201F,1)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,2): + Slot(STA203G,2) + Slot(MAS201F,2)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,3): + Slot(STA203G,3) + Slot(MAS201F,3)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,4): + Slot(STA203G,4) + Slot(MAS201F,4)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,5): + Slot(STA203G,5) + Slot(MAS201F,5)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,6): + Slot(STA203G,6) + Slot(MAS201F,6)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,7): + Slot(STA203G,7) + Slot(MAS201F,7)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,8): + Slot(STA203G,8) + Slot(MAS201F,8)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,9): + Slot(STA203G,9) + Slot(MAS201F,9)
+ <= 1
+ SameTaught(71,STA203G,MAS201F,10): + Slot(STA203G,10)
+ + Slot(MAS201F,10) <= 1
+ SameTaught(71,STA203G,MAS201F,11): + Slot(STA203G,11)
+ + Slot(MAS201F,11) <= 1
+ SameTaught(71,STA203G,MAS201F,12): + Slot(STA203G,12)
+ + Slot(MAS201F,12) <= 1
+ SameTaught(71,STA203G,MAS201F,13): + Slot(STA203G,13)
+ + Slot(MAS201F,13) <= 1
+ SameTaught(71,STA203G,MAS201F,14): + Slot(STA203G,14)
+ + Slot(MAS201F,14) <= 1
+ SameTaught(71,STA203G,MAS201F,15): + Slot(STA203G,15)
+ + Slot(MAS201F,15) <= 1
+ SameTaught(71,STA203G,MAS201F,16): + Slot(STA203G,16)
+ + Slot(MAS201F,16) <= 1
+ SameTaught(71,STA203G,MAS201F,17): + Slot(STA203G,17)
+ + Slot(MAS201F,17) <= 1
+ SameTaught(71,STA203G,MAS201F,18): + Slot(STA203G,18)
+ + Slot(MAS201F,18) <= 1
+ SameTaught(71,STA203G,MAS201F,19): + Slot(STA203G,19)
+ + Slot(MAS201F,19) <= 1
+ SameTaught(71,STA203G,MAS201F,20): + Slot(STA203G,20)
+ + Slot(MAS201F,20) <= 1
+ SameTaught(71,STA203G,MAS201F,21): + Slot(STA203G,21)
+ + Slot(MAS201F,21) <= 1
+ SameTaught(71,STA203G,MAS201F,22): + Slot(STA203G,22)
+ + Slot(MAS201F,22) <= 1
 
 Bounds
  0 <= Slot(VEL601G,1) <= 1

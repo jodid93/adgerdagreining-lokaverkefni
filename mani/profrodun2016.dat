@@ -303,6 +303,16 @@ set Group[58] := LIF614M LIF412M ;
 set Group[59] := TOL403G TOL401G ;
 set Group[60] := FER609G FER603M ;
 set Group[61] := FER409G FER208G LAN410G ;
+set Group[62] := EDL201G EDL401G ;
+set Group[63] := EDL401G RAF402G ;
+set Group[64] := EFN205G EFN214G ;
+set Group[65] := FER210F FER409G ;
+set Group[66] := FER211F FER609G ;
+set Group[67] := LAN203G STA209G ;
+set Group[68] := LAN209F LAN410G ;
+set Group[69] := LIF227F LIF633G ;
+set Group[70] := LIF243F LIF410G ;
+set Group[71] := MAS201F STA203G ;
 
 set CidExam :=
 VEL601G
