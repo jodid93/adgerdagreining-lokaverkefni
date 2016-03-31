@@ -1,5 +1,5 @@
 # Notkun:
-#  glpsol --check -m profrodun2016.mod -d profrodun2016.dat --wlp proftafla.lp
+#  glpsol --check -m profrodun2016.mod -d profrodun2016.dat --wcpxlp proftafla.lp
 #  gurobi_cl TimeLimit=3600 ResultFile=proftafla.sol proftafla.lp
 
 set CidExam; # Mengi námskeiða
@@ -55,22 +55,9 @@ s.t. OneTestOverall{c in CidExam}: sum{e in ExamSlots} Slot[c,e] = 1;
 #Próf með sameiginlega nemendur mega ekki vera í sama stokki
 s.t. SameTime{e in ExamSlots, c1 in CidExam, c2 in CidExam: cidCommon[c1, c2] > 0}: 
 				Slot[c1, e] + Slot[c2, e] <= 1;
-
+#Skorðan fyrir samkennd
 s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots: c1 <> c2}:
 				Slot[c1, e] - Slot[c2, e] = 0;
-
-
-# Ef próf er í sömu grúppu þá mega þau ekki vera í sama stokk
-#s.t. oneExamPerMajor{i in 1..61, c1 in Group[i], c2 in Group[i]: c1<>c2}:
-
-/*# Uppfyllir próftaflan 2016 kröfur um námsleiðir:
-check {i in 1..61, c1 in Group[i], c2 in Group[i]: cidCommon[c1,c2] > 0} 
-                             cidExamslot2016[c1] <> cidExamslot2016[c2];
-# Uppfyllir próftaflan 2016 kröfur um sameiginlega nema:
-check {c1 in CidExam, c2 in CidExam: cidCommon[c1,c2] > 0} 
-                             cidExamslot2016[c1] <> cidExamslot2016[c2];
-
-*/
 solve;
 
 # Skoðum hversu margir nemar eru í prófi í prófstokki ...
