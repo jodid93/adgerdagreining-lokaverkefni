@@ -18,6 +18,36 @@ param cidCommon{CidExam, CidExam} default 0; # fjöldi nema sem taka sameiginleg 
 
 var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 
+/*
+	liður A)
+	Hver er lágmarksfjöldi prófstokka sem þarf til að búa til próftöflu? Próftafl-
+	an þarf einungis að uppfylla þrjú skilyrði (sjá inngang) sem gera próftöfl-
+	una gjaldgenga. Væri hægt að stytta próftímann ef fjöldi sæta væru næg?
+	Hversu mikið væri hægt að stytta hann? Hver er þá nauðsynlegur há-
+	marksfjöldi sæta?
+	
+	til að lágmarka fjölda prófstokka þarf að að hágmarka prófstokka sem innihalda ekkert.
+	til að stytta próftíma væri hægt að sleppa skorðunni um sætin.
+	
+*/
+
+#liður A) a)
+maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
+
+#liður A) b)
+# sama markfall og í A) a) en tekin út skorðann um fjölda nemenda í hverjum prófstokki
+
+/*
+	liður C)
+	
+	Bætið líkan ykkar þannig að nemendur klári prófin sem fyrst og próftímabilið
+	styttist. Hér gerum við ráð fyrir að heildarfjöldi tiltækra sæta sé 450.
+	Hvernig dreifast nemendur á prófstokkanna? Breytist hvíldartími á milli
+	prófa?
+	
+	
+*/
+
 # Max Fjöldi Nemenda skorða
 s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
 # Passa að það sé bara 1 próf fyrir hvert námskeið
