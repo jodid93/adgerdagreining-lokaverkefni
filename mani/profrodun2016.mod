@@ -7,7 +7,7 @@ set CidExam; # Mengi námskeiða
 set Group{1..71} within CidExam;
 
 
-param n := 11; # fjöldi prófdaga
+param n := 6; # fjöldi prófdaga
 set ExamSlots := 1..(2*n); # Prófstokkar
 #set Days := 1..(2*n) by 2;
 
@@ -15,6 +15,8 @@ set ExamSlots := 1..(2*n); # Prófstokkar
 
 param cidCount{CidExam} default 0; # fjöldi nema skráðir í námskeið
 param cidCommon{CidExam, CidExam} default 0; # fjöldi nema sem taka sameiginleg námskeið
+param earlyBird{ExamSlots};
+
 
 var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 
@@ -28,6 +30,9 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 	
 	til að lágmarka fjölda prófstokka þarf að að hágmarka prófstokka sem innihalda ekkert.
 	til að stytta próftíma væri hægt að sleppa skorðunni um sætin.
+
+	með því að stytta param n niður í 7 þá var hægt að komast upp með að hafa bara 14 prófstokka sem er lágmarks tíminn fyrir prófatímabilið.
+	það að taka út skorðuna fyrir sætafjöldann breytti engu varðandi fjölda slots sem þurfti til.
 	
 */
 
@@ -45,19 +50,25 @@ maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
 	Hvernig dreifast nemendur á prófstokkanna? Breytist hvíldartími á milli
 	prófa?
 	
-	
+	með því að láta Examslot sem eru fyrst fá meira vægi og summa síðan yfir þau námskeið sem eru á því sloti og margfalda með væginu, þvingum við módelið til að raða lausnunum á fyrri slotin frekar en þau seinni. niðurstaðan úr því er sú að próftímabilið styttist niður í 14 slot eða 7 daga. slotin eru látin fá meira vægi í gegnu param earlyBird sem er fall af examslots sem fer frá 1 og uppí 111111....11111 
 */
+#markfall fyrir lið c
+#maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e] * earlyBird[e]*cidCount[c];
+#maximize objective: sum{i in ExamSlots, c in CidExam} earlyBird[i] * Slot[c,i] * cidCount[c];
+
 
 # Max Fjöldi Nemenda skorða
-s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
+#s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
 # Passa að það sé bara 1 próf fyrir hvert námskeið
 s.t. OneTestOverall{c in CidExam}: sum{e in ExamSlots} Slot[c,e] = 1;
-#Próf með sameiginlega nemendur mega ekki vera í sama stokki
+# tvö eða fleiri próf með sameiginlega nemendur mega ekki vera í sama stokki
 s.t. SameTime{e in ExamSlots, c1 in CidExam, c2 in CidExam: cidCommon[c1, c2] > 0}: 
 				Slot[c1, e] + Slot[c2, e] <= 1;
 #Skorðan fyrir samkennd
-s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots: c1 <> c2}:
-				Slot[c1, e] - Slot[c2, e] = 0;
+s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
+            Slot[c1,e] = Slot[c2,e];
+				
+
 solve;
 
 # Skoðum hversu margir nemar eru í prófi í prófstokki ...
