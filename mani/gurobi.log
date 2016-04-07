@@ -2068,3 +2068,2012 @@ Best objective -, best bound -, gap -
 
 Unable to retrieve attribute 'X'
 
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 16:59:31
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 24196 rows and 220 columns
+Presolve time: 0.24s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.30 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:03:23
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.24s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.30 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:04:23
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.08 seconds
+(null): 17199 rows, 1680 columns, 39116 nonzeros
+Optimize a model with 17199 rows, 1680 columns and 39116 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 15407 rows and 154 columns
+Presolve time: 0.16s
+Presolved: 1792 rows, 1526 columns, 12318 nonzeros
+Variable types: 0 continuous, 1526 integer (1526 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.22 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:09:39
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.09 seconds
+(null): 18865 rows, 1694 columns, 42448 nonzeros
+Optimize a model with 18865 rows, 1694 columns and 42448 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 14 rows and 14 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:10:21
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.16 seconds
+(null): 29577 rows, 2662 columns, 66704 nonzeros
+Optimize a model with 29577 rows, 2662 columns and 66704 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 22 rows and 22 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:11:05
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 29555 rows, 2640 columns, 64064 nonzeros
+Optimize a model with 29555 rows, 2640 columns and 64064 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.02s
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:11:26
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.29 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:12:33
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.08 seconds
+(null): 17199 rows, 1680 columns, 39116 nonzeros
+Optimize a model with 17199 rows, 1680 columns and 39116 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 15407 rows and 154 columns
+Presolve time: 0.14s
+Presolved: 1792 rows, 1526 columns, 12318 nonzeros
+Variable types: 0 continuous, 1526 integer (1526 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.23 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:15:01
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.08 seconds
+(null): 17199 rows, 1680 columns, 39116 nonzeros
+Optimize a model with 17199 rows, 1680 columns and 39116 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 15407 rows and 154 columns
+Presolve time: 0.15s
+Presolved: 1792 rows, 1526 columns, 12318 nonzeros
+Variable types: 0 continuous, 1526 integer (1526 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.21 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:24:44
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 27100 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27100 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 1.23133e+08
+Presolve removed 24355 rows and 264 columns
+Presolve time: 0.24s
+Presolved: 2745 rows, 2398 columns, 19334 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 108 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      1.2313e+08 1.2313e+08  0.00%     -    0s
+
+Explored 0 nodes (108 simplex iterations) in 0.29 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.231333200000e+08, best bound 1.231333200000e+08, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:27:24
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.27s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.47 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:38:56
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.26s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.41 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:39:54
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.24s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.42 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:40:01
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.26s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.42 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:40:35
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.26s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.44 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:41:35
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.26s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.41 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:41:56
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.25s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.41 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:42:39
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.27s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.41 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 17:44:05
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.15 seconds
+(null): 27003 rows, 2662 columns, 66726 nonzeros
+Optimize a model with 27003 rows, 2662 columns and 66726 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 3e+07]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 24237 rows and 264 columns
+Presolve time: 0.26s
+Presolved: 2766 rows, 2398 columns, 21686 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: infeasible, 477 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (477 simplex iterations) in 0.41 seconds
+Thread count was 8 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 18:39:31
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [5e-02, 7e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 18388.4
+Presolve removed 24196 rows and 220 columns
+Presolve time: 0.24s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 2.685208e+04, 1003 iterations, 0.09 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 26852.0767    0   23 18388.3608 26852.0767  46.0%     -    0s
+H    0     0                    26658.519189 26852.0767  0.73%     -    0s
+H    0     0                    26781.537979 26852.0767  0.26%     -    0s
+H    0     0                    26818.279451 26852.0767  0.13%     -    0s
+     0     0 26852.0767    0  133 26818.2795 26852.0767  0.13%     -    0s
+H    0     0                    26845.459482 26852.0767  0.02%     -    0s
+     0     0 26852.0767    0   76 26845.4595 26852.0767  0.02%     -    0s
+     0     0 26852.0767    0   12 26845.4595 26852.0767  0.02%     -    1s
+     0     0 26852.0767    0   39 26845.4595 26852.0767  0.02%     -    1s
+     0     0 26852.0767    0  102 26845.4595 26852.0767  0.02%     -    2s
+H    0     0                    26847.493395 26852.0767  0.02%     -    2s
+     0     0 26852.0767    0  102 26847.4934 26852.0767  0.02%     -    2s
+     0     0 26852.0767    0  117 26847.4934 26852.0767  0.02%     -    2s
+     0     0 26852.0767    0  105 26847.4934 26852.0767  0.02%     -    2s
+     0     0 26852.0767    0   31 26847.4934 26852.0767  0.02%     -    2s
+H    0     0                    26849.590368 26852.0767  0.01%     -    2s
+
+Cutting planes:
+  Cover: 1
+  Clique: 2
+  MIR: 2
+  GUB cover: 2
+  Zero half: 1
+
+Explored 0 nodes (10594 simplex iterations) in 2.72 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.684959036797e+04, best bound 2.685207667333e+04, gap 0.0093%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 18:43:28
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [2e-03, 7e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 12766.3
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 1.481136e+04, 1463 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 14811.3593    0   11 12766.2710 14811.3593  16.0%     -    0s
+H    0     0                    14805.098393 14811.3593  0.04%     -    0s
+H    0     0                    14808.115103 14811.3593  0.02%     -    0s
+     0     0 14811.3593    0   77 14808.1151 14811.3593  0.02%     -    0s
+H    0     0                    14808.466831 14811.3593  0.02%     -    0s
+H    0     0                    14809.162098 14811.3593  0.01%     -    1s
+     0     0 14811.3593    0  102 14809.1621 14811.3593  0.01%     -    1s
+H    0     0                    14810.078893 14811.3593  0.01%     -    1s
+
+Cutting planes:
+  Cover: 3
+  MIR: 8
+  GUB cover: 4
+
+Explored 0 nodes (4435 simplex iterations) in 1.66 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.481007889299e+04, best bound 1.481135926045e+04, gap 0.0086%
+
+Wrote result file 'profrodun2016lidurD.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 18:48:26
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [4e-06, 7e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 10133.9
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.22s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 1.066086e+04, 1154 iterations, 0.11 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 10660.8577    0   29 10133.9183 10660.8577  5.20%     -    0s
+H    0     0                    10571.404720 10660.8577  0.85%     -    0s
+H    0     0                    10656.768083 10660.8577  0.04%     -    0s
+H    0     0                    10660.404261 10660.8577  0.00%     -    0s
+
+Explored 0 nodes (2747 simplex iterations) in 0.75 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.066040426146e+04, best bound 1.066085771039e+04, gap 0.0043%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 18:52:51
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [5e-04, 4e+04]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 55010.5
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 5.795002e+04, 1373 iterations, 0.13 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 57950.0240    0   27 55010.4706 57950.0240  5.34%     -    0s
+H    0     0                    57704.828200 57950.0240  0.42%     -    0s
+H    0     0                    57942.153619 57950.0240  0.01%     -    0s
+H    0     0                    57946.532613 57950.0240  0.01%     -    0s
+
+Explored 0 nodes (2965 simplex iterations) in 0.63 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.794653261289e+04, best bound 5.795002402304e+04, gap 0.0060%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:04:49
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.12 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+04, 1e+04]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18987e+06
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.189513e+06, 953 iterations, 0.07 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1189513.0    0   26 -1189874.3 -1189513.0  0.03%     -    0s
+H    0     0                    -1189513.279 -1189513.0  0.00%     -    0s
+
+Explored 0 nodes (2570 simplex iterations) in 0.61 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189513278766e+06, best bound -1.189513025008e+06, gap 0.0000%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:12:13
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+11, 1e+11]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -1.19e+13
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 1633 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      -1.190e+13 -1.190e+13  0.00%     -    0s
+
+Explored 0 nodes (1633 simplex iterations) in 0.42 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189999999987e+13, best bound -1.189999999987e+13, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:13:15
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+11, 1e+11]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -1.19e+13
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.22s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 1633 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      -1.190e+13 -1.190e+13  0.00%     -    0s
+
+Explored 0 nodes (1633 simplex iterations) in 0.42 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189999999954e+13, best bound -1.189999999954e+13, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:13:39
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+11, 1e+11]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -1.19e+13
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.22s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: cutoff, 1633 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      -1.190e+13 -1.190e+13  0.00%     -    0s
+
+Explored 0 nodes (1633 simplex iterations) in 0.42 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189999999954e+13, best bound -1.189999999954e+13, gap 0.0%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:14:22
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18996e+07
+Presolve removed 24196 rows and 220 columns
+Presolve time: 0.25s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.189951e+07, 1288 iterations, 0.11 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.190e+07    0  124 -1.190e+07 -1.190e+07  0.00%     -    0s
+
+Explored 0 nodes (2883 simplex iterations) in 0.61 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189964479871e+07, best bound -1.189951302501e+07, gap 0.0011%
+
+Wrote result file 'profrodun2016lidurD2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:16:25
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18995e+07
+Presolve removed 24218 rows and 242 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.189951e+07, 1288 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.190e+07    0  124 -1.190e+07 -1.190e+07  0.00%     -    0s
+
+Explored 0 nodes (2883 simplex iterations) in 0.61 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189953772714e+07, best bound -1.189951302501e+07, gap 0.0002%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:21:41
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.16 seconds
+(null): 26959 rows, 2640 columns, 61468 nonzeros
+Optimize a model with 26959 rows, 2640 columns and 61468 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 7e+02]
+Found heuristic solution: objective -1.18994e+07
+Presolve removed 24243 rows and 242 columns
+Presolve time: 0.22s
+Presolved: 2716 rows, 2398 columns, 19063 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.189924e+07, 1193 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.190e+07    0  120 -1.190e+07 -1.190e+07  0.00%     -    0s
+
+Explored 0 nodes (2446 simplex iterations) in 0.53 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189939808371e+07, best bound -1.189924283800e+07, gap 0.0013%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:21:49
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 7e+02]
+Found heuristic solution: objective -1.18994e+07
+Presolve removed 24221 rows and 220 columns
+Presolve time: 0.23s
+Presolved: 2716 rows, 2398 columns, 19063 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.189924e+07, 1193 iterations, 0.11 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.190e+07    0  120 -1.190e+07 -1.190e+07  0.00%     -    0s
+
+Explored 0 nodes (2446 simplex iterations) in 0.52 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189942308160e+07, best bound -1.189924283800e+07, gap 0.0015%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:23:28
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.14 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [9e+04, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18322e+07
+Presolve removed 24196 rows and 220 columns
+Presolve time: 0.25s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.180916e+07, 991 iterations, 0.08 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.181e+07    0    4 -1.183e+07 -1.181e+07  0.20%     -    0s
+H    0     0                    -1.18093e+07 -1.181e+07  0.00%     -    0s
+
+Explored 0 nodes (2837 simplex iterations) in 0.60 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.180933500000e+07, best bound -1.180916000000e+07, gap 0.0015%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:24:49
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [9e+04, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18922e+07
+Presolve removed 24196 rows and 220 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.188934e+07, 1085 iterations, 0.09 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.189e+07    0  135 -1.189e+07 -1.189e+07  0.02%     -    0s
+H    0     0                    -1.18893e+07 -1.189e+07  0.00%     -    0s
+
+Explored 0 nodes (1622 simplex iterations) in 0.50 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.188934140221e+07, best bound -1.188933914229e+07, gap 0.0000%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:25:30
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.15 seconds
+(null): 26937 rows, 2618 columns, 58828 nonzeros
+Optimize a model with 26937 rows, 2618 columns and 58828 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18996e+07
+Presolve removed 24196 rows and 220 columns
+Presolve time: 0.23s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective -1.189951e+07, 1288 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.190e+07    0  124 -1.190e+07 -1.190e+07  0.00%     -    0s
+
+Explored 0 nodes (2883 simplex iterations) in 0.59 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189964479871e+07, best bound -1.189951302501e+07, gap 0.0011%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 19:37:18
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.10 seconds
+(null): 19623 rows, 1904 columns, 42784 nonzeros
+Optimize a model with 19623 rows, 1904 columns and 42784 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective -1.18995e+07
+Presolve removed 17594 rows and 160 columns
+Presolve time: 0.17s
+Presolved: 2029 rows, 1744 columns, 14059 nonzeros
+Variable types: 0 continuous, 1744 integer (1744 binary)
+
+Root relaxation: objective -1.189951e+07, 1057 iterations, 0.08 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1.190e+07    0  101 -1.190e+07 -1.190e+07  0.00%     -    0s
+
+Explored 0 nodes (2610 simplex iterations) in 0.46 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.189954942704e+07, best bound -1.189951302501e+07, gap 0.0003%
+
+Wrote result file 'profrodun2016lidurD3.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:07:59
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.13 seconds
+(null): 24743 rows, 1904 columns, 53024 nonzeros
+Optimize a model with 24743 rows, 1904 columns and 53024 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+05, 1e+05]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 320 rows and 0 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.05 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:08:25
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.19 seconds
+(null): 36617 rows, 2618 columns, 78188 nonzeros
+Optimize a model with 36617 rows, 2618 columns and 78188 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 440 rows and 0 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:09:11
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 6.47 seconds
+(null): 1043919 rows, 23800 columns, 2134800 nonzeros
+Optimize a model with 1043919 rows, 23800 columns and 2134800 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 4000 rows and 0 columns
+Presolve time: 0.24s
+
+Explored 0 nodes (0 simplex iterations) in 1.79 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:10:51
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 1.90 seconds
+(null): 260225 rows, 2618 columns, 525404 nonzeros
+Optimize a model with 260225 rows, 2618 columns and 525404 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 10604 rows and 0 columns
+Presolve time: 0.06s
+
+Explored 0 nodes (0 simplex iterations) in 0.49 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:11:39
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 1.62 seconds
+(null): 260225 rows, 2618 columns, 525404 nonzeros
+Optimize a model with 260225 rows, 2618 columns and 525404 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.05s
+
+Explored 0 nodes (0 simplex iterations) in 0.51 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:12:21
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.85 seconds
+(null): 143581 rows, 2618 columns, 292116 nonzeros
+Optimize a model with 143581 rows, 2618 columns and 292116 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.03s
+
+Explored 0 nodes (0 simplex iterations) in 0.27 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:14:42
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 4.30 seconds
+(null): 663569 rows, 5950 columns, 1338700 nonzeros
+Optimize a model with 663569 rows, 5950 columns and 1338700 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.14s
+
+Explored 0 nodes (0 simplex iterations) in 1.32 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:15:21
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 5.03 seconds
+(null): 663569 rows, 5950 columns, 1338700 nonzeros
+Optimize a model with 663569 rows, 5950 columns and 1338700 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.20s
+
+Explored 0 nodes (0 simplex iterations) in 1.37 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:15:29
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 5.67 seconds
+(null): 663569 rows, 5950 columns, 1338700 nonzeros
+Optimize a model with 663569 rows, 5950 columns and 1338700 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.14s
+
+Explored 0 nodes (0 simplex iterations) in 1.27 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:16:18
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.93 seconds
+(null): 143581 rows, 2618 columns, 292116 nonzeros
+Optimize a model with 143581 rows, 2618 columns and 292116 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 0 rows and 1102 columns
+Presolve time: 0.07s
+
+Explored 0 nodes (0 simplex iterations) in 0.31 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:18:56
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.65 seconds
+(null): 143581 rows, 2618 columns, 175472 nonzeros
+Optimize a model with 143581 rows, 2618 columns and 175472 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 140840 rows and 220 columns
+Presolve time: 0.30s
+Presolved: 2741 rows, 2398 columns, 19278 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 323 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (454 simplex iterations) in 0.38 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:27:04
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.22 seconds
+(null): 38069 rows, 2618 columns, 81092 nonzeros
+Optimize a model with 38069 rows, 2618 columns and 81092 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 5334 rows and 195 columns
+Presolve time: 0.02s
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:27:20
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.20 seconds
+(null): 38069 rows, 2618 columns, 70444 nonzeros
+Optimize a model with 38069 rows, 2618 columns and 70444 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 35331 rows and 220 columns
+Presolve time: 0.25s
+Presolved: 2738 rows, 2398 columns, 19269 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 402 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (596 simplex iterations) in 0.33 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:32:32
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.17 seconds
+(null): 38069 rows, 2618 columns, 70444 nonzeros
+Optimize a model with 38069 rows, 2618 columns and 70444 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 35331 rows and 220 columns
+Presolve time: 0.26s
+Presolved: 2738 rows, 2398 columns, 19269 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 402 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (596 simplex iterations) in 0.32 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:33:55
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.17 seconds
+(null): 38069 rows, 2618 columns, 70444 nonzeros
+Optimize a model with 38069 rows, 2618 columns and 70444 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.08 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:34:16
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.18 seconds
+(null): 38069 rows, 2618 columns, 59796 nonzeros
+Optimize a model with 38069 rows, 2618 columns and 59796 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:44:48
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.18 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 0 rows and 198 columns
+Presolve time: 0.02s
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:45:23
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.19 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 32294 rows and 220 columns
+Presolve time: 0.24s
+Presolved: 2739 rows, 2398 columns, 19284 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 431 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (614 simplex iterations) in 0.32 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:45:45
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.17 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 32294 rows and 220 columns
+Presolve time: 0.26s
+Presolved: 2739 rows, 2398 columns, 19284 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 431 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (614 simplex iterations) in 0.32 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:46:09
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.19 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 32294 rows and 220 columns
+Presolve time: 0.24s
+Presolved: 2739 rows, 2398 columns, 19284 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 431 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (614 simplex iterations) in 0.32 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:46:31
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.17 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 32294 rows and 220 columns
+Presolve time: 0.24s
+Presolved: 2739 rows, 2398 columns, 19284 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 431 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (614 simplex iterations) in 0.33 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:46:52
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.17 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Presolve removed 32118 rows and 428 columns
+Presolve time: 0.24s
+
+Explored 0 nodes (0 simplex iterations) in 0.29 seconds
+Thread count was 1 (of 8 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 6.5.1 (win64) logging started 04/06/16 20:47:04
+
+
+Gurobi Optimizer version 6.5.1 build v6.5.1rc3 (win64)
+Copyright (c) 2016, Gurobi Optimization, Inc.
+
+Read LP format model from file profrodun2016.lp
+Reading time = 0.16 seconds
+(null): 35033 rows, 2618 columns, 75020 nonzeros
+Optimize a model with 35033 rows, 2618 columns and 75020 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 3e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 5e+02]
+Found heuristic solution: objective 5
+Presolve removed 32294 rows and 220 columns
+Presolve time: 0.25s
+Presolved: 2739 rows, 2398 columns, 19284 nonzeros
+Variable types: 0 continuous, 2398 integer (2398 binary)
+
+Root relaxation: objective 3.630303e+01, 431 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   36.30303    0    2    5.00000   36.30303   626%     -    0s
+H    0     0                      36.0000000   36.30303  0.84%     -    0s
+
+Explored 0 nodes (614 simplex iterations) in 0.32 seconds
+Thread count was 8 (of 8 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.600000000000e+01, best bound 3.600000000000e+01, gap 0.0%
+
+Wrote result file 'profrodun2016lidurB2.sol'
+

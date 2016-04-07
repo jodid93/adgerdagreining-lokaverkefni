@@ -7,7 +7,7 @@ set CidExam; # Mengi námskeiða
 set Group{1..71} within CidExam;
 
 
-param n := 6; # fjöldi prófdaga
+param n := 11; # fjöldi prófdaga
 set ExamSlots := 1..(2*n); # Prófstokkar
 #set Days := 1..(2*n) by 2;
 
@@ -32,7 +32,7 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 	til að stytta próftíma væri hægt að sleppa skorðunni um sætin.
 
 	með því að stytta param n niður í 7 þá var hægt að komast upp með að hafa bara 14 prófstokka sem er lágmarks tíminn fyrir prófatímabilið.
-	það að taka út skorðuna fyrir sætafjöldann breytti engu varðandi fjölda slots sem þurfti til.
+	það að taka út skorðuna fyrir sætafjöldann breytti engu varðandi fjölda slots sem þurfti til, en hámarks sætafjöldinn þarf þá að vera 1142 sem er tekinn úr áföngunum sem koma í prófstokk 1 sem er stærstur.
 	
 */
 
@@ -56,18 +56,42 @@ maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
 #maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e] * earlyBird[e]*cidCount[c];
 #maximize objective: sum{i in ExamSlots, c in CidExam} earlyBird[i] * Slot[c,i] * cidCount[c];
 
+/*
+	liður D)
+	
+	pælingin var að gefa mínus fyrir það að vera seint í prófstokkunum með því að hafa / e*e*e*e. einnig gáfum við stigvaxandi mínus fyrir það að hafa mörg námskeið í prófstokk. þannig náum við að hafa öll stærstu námskeiðin fremst.
+*/
+#markfall fyrir lið d
+
+/*var fjoldinemaiprofstokki{ExamSlots};
+ 
+subject to dummyskorda{e in ExamSlots}:  fjoldinemaiprofstokki[e] = sum{c in CidExam} Slot[c,e]*cidCount[c];*/
+
+#maximize bigFirst: sum{e in ExamSlots, c in CidExam} ((Slot[c,e] * (cidCount[c]/(e*e*e*e))) - (Slot[c,e]*100000));
 
 # Max Fjöldi Nemenda skorða
-#s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
+s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
+
 # Passa að það sé bara 1 próf fyrir hvert námskeið
 s.t. OneTestOverall{c in CidExam}: sum{e in ExamSlots} Slot[c,e] = 1;
+
 # tvö eða fleiri próf með sameiginlega nemendur mega ekki vera í sama stokki
 s.t. SameTime{e in ExamSlots, c1 in CidExam, c2 in CidExam: cidCommon[c1, c2] > 0}: 
 				Slot[c1, e] + Slot[c2, e] <= 1;
+				
 #Skorðan fyrir samkennd
 s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
             Slot[c1,e] = Slot[c2,e];
-				
+			
+#skorða til að passa að námskeið í sömu námsleið eru aldrei í sama sloti
+s.t. namsleid{i in 1..2, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
+            Slot[c1,e] + Slot[c2,e] <= 1;
+			
+s.t. Rest1{i in 1..2, c1 in Group[i], c2 in Group[i], e in ExamSlots, e2 in ExamSlots:  c1 < c2}:
+            (Slot[c1,e]*e) - (Slot[c2,e]*e2) >= -23;
+
+/*s.t. Rest2{i in 1..61, c1 in Group[i], c2 in Group[i], e in ExamSlots, e2 in ExamSlots:  c1 < c2}:
+            (Slot[c1,e]*e) - (Slot[c2,e2]*e2) <= -2;*/
 
 solve;
 
