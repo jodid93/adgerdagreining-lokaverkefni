@@ -7,7 +7,7 @@ set CidExam; # Mengi námskeiða
 set Group{1..71} within CidExam;
 
 
-param n := 8; # fjöldi prófdaga
+param n := 12; # fjöldi prófdaga
 set ExamSlots := 1..(2*n); # Prófstokkar
 set Days := 1..(2*n) by 2;
 
