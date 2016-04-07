@@ -7,9 +7,9 @@ set CidExam; # Mengi námskeiða
 set Group{1..71} within CidExam;
 
 
-param n := 11; # fjöldi prófdaga
+param n := 8; # fjöldi prófdaga
 set ExamSlots := 1..(2*n); # Prófstokkar
-#set Days := 1..(2*n) by 2;
+set Days := 1..(2*n) by 2;
 
 #param cidExamslot2016{CidExam}; # Lausn háskólans til samnburðar
 
@@ -37,7 +37,7 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 */
 
 #liður A) a)
-maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
+#maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
 
 #liður A) b)
 # sama markfall og í A) a) en tekin út skorðann um fjölda nemenda í hverjum prófstokki
@@ -67,7 +67,7 @@ maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
  
 subject to dummyskorda{e in ExamSlots}:  fjoldinemaiprofstokki[e] = sum{c in CidExam} Slot[c,e]*cidCount[c];*/
 
-#maximize bigFirst: sum{e in ExamSlots, c in CidExam} ((Slot[c,e] * (cidCount[c]/(e*e*e*e))) - (Slot[c,e]*100000));
+maximize bigFirst: sum{e in ExamSlots, c in CidExam} ((Slot[c,e] * (cidCount[c]/(e*e*e*e))) - (Slot[c,e]*100000));
 
 # Max Fjöldi Nemenda skorða
 s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
@@ -86,12 +86,12 @@ s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1
 #skorða til að passa að námskeið í sömu námsleið eru aldrei í sama sloti
 s.t. namsleid{i in 1..2, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
             Slot[c1,e] + Slot[c2,e] <= 1;
-			
-s.t. Rest1{i in 1..2, c1 in Group[i], c2 in Group[i], e in ExamSlots, e2 in ExamSlots:  c1 < c2}:
-            (Slot[c1,e]*e) - (Slot[c2,e]*e2) >= -23;
+	
 
-/*s.t. Rest2{i in 1..61, c1 in Group[i], c2 in Group[i], e in ExamSlots, e2 in ExamSlots:  c1 < c2}:
-            (Slot[c1,e]*e) - (Slot[c2,e2]*e2) <= -2;*/
+s.t. Rest{e in 3..((n*2)-1), i in 1..61, c1 in Group[i], c2 in Group[i]: c1 < c2}: 
+(Slot[c1,e-2] + Slot[c1,e-1] + Slot[c1,e] + Slot[c1,e+1])+(Slot[c2,e-2] + Slot[c2,e-1] + Slot[c2,e] + Slot[c2,e+1]) <= 1;
+
+
 
 solve;
 
