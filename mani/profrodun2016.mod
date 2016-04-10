@@ -2,79 +2,80 @@
 #  glpsol --check -m profrodun2016.mod -d profrodun2016.dat --wcpxlp proftafla.lp
 #  gurobi_cl TimeLimit=3600 ResultFile=proftafla.sol proftafla.lp
 
-set CidExam; # Mengi námskeiğa
- # Skilgreindar námsbrautir/leiğir, frá 62 upp şá er şağ samkennd námskeiğ
+set CidExam; # Mengi nÃ¡mskeiÃ°a
+ # Skilgreindar nÃ¡msbrautir/leiÃ°ir, frÃ¡ 62 upp Ã¾Ã¡ er Ã¾aÃ° samkennd nÃ¡mskeiÃ°
 set Group{1..71} within CidExam;
 
 
-param n := 12; # fjöldi prófdaga
-set ExamSlots := 1..(2*n); # Prófstokkar
+param n := 12; # fjÃ¶ldi prÃ³fdaga
+set ExamSlots := 1..(2*n); # PrÃ³fstokkar
 set Days := 1..(2*n) by 2;
 
-#param cidExamslot2016{CidExam}; # Lausn háskólans til samnburğar
+#param cidExamslot2016{CidExam}; # Lausn hÃ¡skÃ³lans til samnburÃ°ar
 
-param cidCount{CidExam} default 0; # fjöldi nema skráğir í námskeiğ
-param cidCommon{CidExam, CidExam} default 0; # fjöldi nema sem taka sameiginleg námskeiğ
+param cidCount{CidExam} default 0; # fjÃ¶ldi nema skrÃ¡Ã°ir Ã­ nÃ¡mskeiÃ°
+param cidCommon{CidExam, CidExam} default 0; # fjÃ¶ldi nema sem taka sameiginleg nÃ¡mskeiÃ°
 param earlyBird{ExamSlots};
 
 
-var Slot{CidExam, ExamSlots} binary; # ákvörğunarbreyta
+var Slot{CidExam, ExamSlots} binary; # Ã¡kvÃ¶rÃ°unarbreyta
 
 /*
-	liğur A)
-	Hver er lágmarksfjöldi prófstokka sem şarf til ağ búa til próftöflu? Próftafl-
-	an şarf einungis ağ uppfylla şrjú skilyrği (sjá inngang) sem gera próftöfl-
-	una gjaldgenga. Væri hægt ağ stytta próftímann ef fjöldi sæta væru næg?
-	Hversu mikiğ væri hægt ağ stytta hann? Hver er şá nauğsynlegur há-
-	marksfjöldi sæta?
+	liÃ°ur A)
+	Hver er lÃ¡gmarksfjÃ¶ldi prÃ³fstokka sem Ã¾arf til aÃ° bÃºa til prÃ³ftÃ¶flu? PrÃ³ftafl-
+	an Ã¾arf einungis aÃ° uppfylla Ã¾rjÃº skilyrÃ°i (sjÃ¡ inngang) sem gera prÃ³ftÃ¶fl-
+	una gjaldgenga. VÃ¦ri hÃ¦gt aÃ° stytta prÃ³ftÃ­mann ef fjÃ¶ldi sÃ¦ta vÃ¦ru nÃ¦g?
+	Hversu mikiÃ° vÃ¦ri hÃ¦gt aÃ° stytta hann? Hver er Ã¾Ã¡ nauÃ°synlegur hÃ¡-
+	marksfjÃ¶ldi sÃ¦ta?
 	
-	Til ağ lágmarka fjölda prófstokka şarf ağ ağ hágmarka prófstokka sem innihalda ekkert.
-	Til ağ stytta próftíma væri hægt ağ sleppa skorğunni um sætin.
+	Til aÃ° lÃ¡gmarka fjÃ¶lda prÃ³fstokka Ã¾arf aÃ° aÃ° hÃ¡gmarka prÃ³fstokka sem innihalda ekkert.
+	Til aÃ° stytta prÃ³ftÃ­ma vÃ¦ri hÃ¦gt aÃ° sleppa skorÃ°unni um sÃ¦tin.
 
-	Meğ şví ağ stytta param n niğur í 7 şá var hægt ağ komast upp meğ ağ hafa bara
-	14 prófstokka sem er lágmarks tíminn fyrir prófatímabiliğ.
-	Şağ ağ taka út skorğuna fyrir sætafjöldann breytti engu varğandi fjölda slots sem şurfti
-	til, en hámarks sætafjöldinn şarf şá ağ vera 1142 sem er tekinn úr áföngunum sem koma í
-	prófstokk 1 sem er stærstur.
+	MeÃ° Ã¾vÃ­ aÃ° stytta param n niÃ°ur Ã­ 7 Ã¾Ã¡ var hÃ¦gt aÃ° komast upp meÃ° aÃ° hafa bara
+	14 prÃ³fstokka sem er lÃ¡gmarks tÃ­minn fyrir prÃ³fatÃ­mabiliÃ°.
+	ÃaÃ° aÃ° taka Ãºt skorÃ°una fyrir sÃ¦tafjÃ¶ldann breytti engu varÃ°andi fjÃ¶lda slots sem Ã¾urfti
+	til, en hÃ¡marks sÃ¦tafjÃ¶ldinn Ã¾arf Ã¾Ã¡ aÃ° vera 1142 sem er tekinn Ãºr Ã¡fÃ¶ngunum sem koma Ã­
+	prÃ³fstokk 1 sem er stÃ¦rstur.
 	
 */
 
-#liğur A) a)
+#liÃ°ur A) a)
 #maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e];
 
-#liğur A) b)
-# sama markfall og í A) a) en tekin út skorğann um fjölda nemenda í hverjum prófstokki
+#liÃ°ur A) b)
+# sama markfall og Ã­ A) a) en tekin Ãºt skorÃ°ann um fjÃ¶lda nemenda Ã­ hverjum prÃ³fstokki
 
 /*
-	liğur C)
+	liÃ°ur C)
 	
-	Bætiğ líkan ykkar şannig ağ nemendur klári prófin sem fyrst og próftímabiliğ
-	styttist. Hér gerum viğ ráğ fyrir ağ heildarfjöldi tiltækra sæta sé 450.
-	Hvernig dreifast nemendur á prófstokkanna? Breytist hvíldartími á milli
-	prófa?
+	BÃ¦tiÃ° lÃ­kan ykkar Ã¾annig aÃ° nemendur klÃ¡ri prÃ³fin sem fyrst og prÃ³ftÃ­mabiliÃ°
+	styttist. HÃ©r gerum viÃ° rÃ¡Ã° fyrir aÃ° heildarfjÃ¶ldi tiltÃ¦kra sÃ¦ta sÃ© 450.
+	Hvernig dreifast nemendur Ã¡ prÃ³fstokkanna? Breytist hvÃ­ldartÃ­mi Ã¡ milli
+	prÃ³fa?
 	
-	Meğ şví ağ láta Examslot sem eru fyrst fá meira vægi og summa síğan yfir şau
-	námskeiğ sem eru á şví sloti og margfalda meğ væginu, şvingum viğ módeliğ til
-	ağ rağa lausnunum á fyrri slotin frekar en şau seinni. niğurstağan úr şví er
-	sú ağ próftímabiliğ styttist niğur í 14 slot eğa 7 daga. slotin eru látin fá
-	meira vægi í gegnu param earlyBird sem er fall af examslots sem fer frá 1 og
-	uppí 111111....11111 
+	MeÃ° Ã¾vÃ­ aÃ° lÃ¡ta Examslot sem eru fyrst fÃ¡ meira vÃ¦gi og summa sÃ­Ã°an yfir Ã¾au
+	nÃ¡mskeiÃ° sem eru Ã¡ Ã¾vÃ­ sloti og margfalda meÃ° vÃ¦ginu, Ã¾vingum viÃ° mÃ³deliÃ° til
+	aÃ° raÃ°a lausnunum Ã¡ fyrri slotin frekar en Ã¾au seinni. niÃ°urstaÃ°an Ãºr Ã¾vÃ­ er
+	sÃº aÃ° prÃ³ftÃ­mabiliÃ° styttist niÃ°ur Ã­ 14 slot eÃ°a 7 daga. slotin eru lÃ¡tin fÃ¡
+	meira vÃ¦gi Ã­ gegnu param earlyBird sem er fall af examslots sem fer frÃ¡ 1 og
+	uppÃ­ 111111....11111 
 */
-#markfall fyrir liğ c
+#markfall fyrir liÃ° c
 #maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e] * earlyBird[e]*cidCount[c];
 #maximize objective: sum{i in ExamSlots, c in CidExam} earlyBird[i] * Slot[c,i] * cidCount[c];
 
 /*
-	liğur D)
+	liÃ°ur D)
 
-	Reyniğ nú ağ færa fjölmennu námskeiğin fyrr á próftímabiliğ. Hvernig breytist 
-	lausnin? Skoğiğ hvernig hvíldartími og dreifing nemenda yfir prófstokka breytist.
+	ReyniÃ° nÃº aÃ° fÃ¦ra fjÃ¶lmennu nÃ¡mskeiÃ°in fyrr Ã¡ prÃ³ftÃ­mabiliÃ°. Hvernig
+	breytist lausnin? SkoÃ°iÃ° hvernig hvÃ­ldartÃ­mi og dreifing nemenda yfir prÃ³fstokka
+	breytist.
 	
-	Pælingin var ağ gefa mínus fyrir şağ ağ vera seint í prófstokkunum meğ şví
-	ağ hafa / e*e*e*e. einnig gáfum viğ stigvaxandi mínus fyrir şağ ağ hafa mörg
-	námskeiğ í prófstokk. şannig náum viğ ağ hafa öll stærstu námskeiğin fremst.
+	PÃ¦lingin var aÃ° gefa mÃ­nus fyrir Ã¾aÃ° aÃ° vera seint Ã­ prÃ³fstokkunum meÃ° Ã¾vÃ­
+	aÃ° hafa / e*e*e*e. einnig gÃ¡fum viÃ° stigvaxandi mÃ­nus fyrir Ã¾aÃ° aÃ° hafa mÃ¶rg
+	nÃ¡mskeiÃ° Ã­ prÃ³fstokk. Ã¾annig nÃ¡um viÃ° aÃ° hafa Ã¶ll stÃ¦rstu nÃ¡mskeiÃ°in fremst.
 */
-#markfall fyrir liğ d
+#markfall fyrir liÃ° d
 
 /*var fjoldinemaiprofstokki{ExamSlots};
  
@@ -82,23 +83,23 @@ subject to dummyskorda{e in ExamSlots}:  fjoldinemaiprofstokki[e] = sum{c in Cid
 
 maximize bigFirst: sum{e in ExamSlots, c in CidExam} ((Slot[c,e] * (cidCount[c]/(e*e*e*e))) - (Slot[c,e]*100000));
 
-# Max Fjöldi Nemenda skorğa
+# Max FjÃ¶ldi Nemenda skorÃ°a
 s.t. MaxStudents{e in ExamSlots}: sum{c in CidExam} Slot[c,e] * cidCount[c] <= 450;
 
-# Passa ağ şağ sé bara 1 próf fyrir hvert námskeiğ
+# Passa aÃ° Ã¾aÃ° sÃ© bara 1 prÃ³f fyrir hvert nÃ¡mskeiÃ°
 s.t. OneTestOverall{c in CidExam}: sum{e in ExamSlots} Slot[c,e] = 1;
 
-# tvö eğa fleiri próf meğ sameiginlega nemendur mega ekki vera í sama stokki
+# tvÃ¶ eÃ°a fleiri prÃ³f meÃ° sameiginlega nemendur mega ekki vera Ã­ sama stokki
 s.t. SameTime{e in ExamSlots, c1 in CidExam, c2 in CidExam: cidCommon[c1, c2] > 0}: 
 				Slot[c1, e] + Slot[c2, e] <= 1;
 				
-#Skorğan fyrir samkennd
+#SkorÃ°an fyrir samkennd
 s.t. SameTaught{i in 62..71, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
             Slot[c1,e] = Slot[c2,e];
 			
-#skorğa til ağ passa ağ námskeiğ í sömu námsleiğ eru aldrei í sama sloti
-s.t. namsleid{i in 1..2, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
-            Slot[c1,e] + Slot[c2,e] <= 1;
+# #skorÃ°a til aÃ° passa aÃ° nÃ¡mskeiÃ° Ã­ sÃ¶mu nÃ¡msleiÃ° eru aldrei Ã­ sama sloti
+# s.t. namsleid{i in 1..2, c1 in Group[i], c2 in Group[i], e in ExamSlots:  c1 < c2}:
+#             Slot[c1,e] + Slot[c2,e] <= 1;
 	
 
 s.t. Rest{e in 3..((n*2)-1), i in 1..61, c1 in Group[i], c2 in Group[i]: c1 < c2}: 
@@ -108,133 +109,133 @@ s.t. Rest{e in 3..((n*2)-1), i in 1..61, c1 in Group[i], c2 in Group[i]: c1 < c2
 
 solve;
 
-# Skoğum hversu margir nemar eru í prófi í prófstokki ...
+# SkoÃ°um hversu margir nemar eru Ã­ prÃ³fi Ã­ prÃ³fstokki ...
 for {e in ExamSlots} {
-  printf : "Fjöldi nema í prófstokki %d eru %d\n", e, sum{c in CidExam} 
+  printf : "FjÃ¶ldi nema Ã­ prÃ³fstokki %d eru %d\n", e, sum{c in CidExam} 
                                                 Slot[c,e] * cidCount[c];
 }
 
 end;
 /*
-Hér kemur lausn Háskólans:
-Númer	Námskeiğ	Fjöldi	Dagsetning
-EFN205G	Efnafræği II (EFN214G)	22	Mán. 25 apr. 2016 kl. 09:00 - 12:00
-EFN214G	Lífræn efnafræği L (EFN205G)	54	Mán. 25 apr. 2016 kl. 09:00 - 12:00
-HBV401G	Şróun hugbúnağar	122	Mán. 25 apr. 2016 kl. 09:00 - 12:00
-LEF406G	Lífefnafræği 2	43	Mán. 25 apr. 2016 kl. 09:00 - 12:00
-STA202G	Mengi og firğrúm	21	Mán. 25 apr. 2016 kl. 09:00 - 12:00
-VEL601G	Varmaflutningsfræği	53	Mán. 25 apr. 2016 kl. 09:00 - 12:00
-BYG603G	Framkvæmdafræği 1	18	Mán. 25 apr. 2016 kl. 13:30 - 16:30
-FER603M	Nısköpun í ferğaşjónustu	62	Mán. 25 apr. 2016 kl. 13:30 - 16:30
-JAR418G	Jöklafræği	22	Mán. 25 apr. 2016 kl. 13:30 - 16:30
-RAF403G	Rafeindatækni 1	14	Mán. 25 apr. 2016 kl. 13:30 - 16:30
-IDN209F	Slembin ferli og ákvarğanafræği	15	Şri. 26 apr. 2016 kl. 09:00 - 12:00
-JAR253F	Jarğefnafræği hinnar föstu jarğar	10	Şri. 26 apr. 2016 kl. 09:00 - 12:00
-LEF617M	Efnafræği ensíma	6	Şri. 26 apr. 2016 kl. 09:00 - 12:00
-LIF412M	Sameindaerfğafræği	15	Şri. 26 apr. 2016 kl. 09:00 - 12:00
-TOL203F	Reiknirit, rökfræği og reiknanleiki	10	Şri. 26 apr. 2016 kl. 09:00 - 12:00
-UMV213F	Vatnsaflsvirkjanir	10	Şri. 26 apr. 2016 kl. 09:00 - 12:00
-LAN203G	Tölfræği (STÆ209G)	106	Şri. 26 apr. 2016 kl. 13:30 - 16:30
-STA209G	Tölfræği og gagnavinnsla (LAN203G)	130	Şri. 26 apr. 2016 kl. 13:30 - 16:30
-STA405G	Töluleg greining	169	Şri. 26 apr. 2016 kl. 13:30 - 16:30
-TOL203G	Tölvunarfræği 2	279	Miğ. 27 apr. 2016 kl. 09:00 - 12:00
-UAU214M	Verndunarlíffræği	22	Miğ. 27 apr. 2016 kl. 09:00 - 12:00
-BYG201G	Greining burğarvirkja 1	19	Miğ. 27 apr. 2016 kl. 13:30 - 16:30
-EDL403G	Frumeinda- og ljósfræği	13	Miğ. 27 apr. 2016 kl. 13:30 - 16:30
-LAN604M	Borgalandfræği	25	Miğ. 27 apr. 2016 kl. 13:30 - 16:30
-LIF401G	Şroskunarfræği	44	Miğ. 27 apr. 2016 kl. 13:30 - 16:30
-VEL202G	Burğarşolsfræği	88	Miğ. 27 apr. 2016 kl. 13:30 - 16:30
-EFN410G	Eğlisefnafræği B	23	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-JAR211G	Steindafræği	20	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-JAR417G	Eldfjallafræği	57	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-RAF401G	Greining og uppbygging rása	15	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-RAF616M	Şráğlaus fjarskipti	8	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+HÃ©r kemur lausn HÃ¡skÃ³lans:
+NÃºmer	NÃ¡mskeiÃ°	FjÃ¶ldi	Dagsetning
+EFN205G	EfnafrÃ¦Ã°i II (EFN214G)	22	MÃ¡n. 25 apr. 2016 kl. 09:00 - 12:00
+EFN214G	LÃ­frÃ¦n efnafrÃ¦Ã°i L (EFN205G)	54	MÃ¡n. 25 apr. 2016 kl. 09:00 - 12:00
+HBV401G	ÃrÃ³un hugbÃºnaÃ°ar	122	MÃ¡n. 25 apr. 2016 kl. 09:00 - 12:00
+LEF406G	LÃ­fefnafrÃ¦Ã°i 2	43	MÃ¡n. 25 apr. 2016 kl. 09:00 - 12:00
+STA202G	Mengi og firÃ°rÃºm	21	MÃ¡n. 25 apr. 2016 kl. 09:00 - 12:00
+VEL601G	VarmaflutningsfrÃ¦Ã°i	53	MÃ¡n. 25 apr. 2016 kl. 09:00 - 12:00
+BYG603G	FramkvÃ¦mdafrÃ¦Ã°i 1	18	MÃ¡n. 25 apr. 2016 kl. 13:30 - 16:30
+FER603M	NÃ½skÃ¶pun Ã­ ferÃ°aÃ¾jÃ³nustu	62	MÃ¡n. 25 apr. 2016 kl. 13:30 - 16:30
+JAR418G	JÃ¶klafrÃ¦Ã°i	22	MÃ¡n. 25 apr. 2016 kl. 13:30 - 16:30
+RAF403G	RafeindatÃ¦kni 1	14	MÃ¡n. 25 apr. 2016 kl. 13:30 - 16:30
+IDN209F	Slembin ferli og Ã¡kvarÃ°anafrÃ¦Ã°i	15	Ãri. 26 apr. 2016 kl. 09:00 - 12:00
+JAR253F	JarÃ°efnafrÃ¦Ã°i hinnar fÃ¶stu jarÃ°ar	10	Ãri. 26 apr. 2016 kl. 09:00 - 12:00
+LEF617M	EfnafrÃ¦Ã°i ensÃ­ma	6	Ãri. 26 apr. 2016 kl. 09:00 - 12:00
+LIF412M	SameindaerfÃ°afrÃ¦Ã°i	15	Ãri. 26 apr. 2016 kl. 09:00 - 12:00
+TOL203F	Reiknirit, rÃ¶kfrÃ¦Ã°i og reiknanleiki	10	Ãri. 26 apr. 2016 kl. 09:00 - 12:00
+UMV213F	Vatnsaflsvirkjanir	10	Ãri. 26 apr. 2016 kl. 09:00 - 12:00
+LAN203G	TÃ¶lfrÃ¦Ã°i (STÃ†209G)	106	Ãri. 26 apr. 2016 kl. 13:30 - 16:30
+STA209G	TÃ¶lfrÃ¦Ã°i og gagnavinnsla (LAN203G)	130	Ãri. 26 apr. 2016 kl. 13:30 - 16:30
+STA405G	TÃ¶luleg greining	169	Ãri. 26 apr. 2016 kl. 13:30 - 16:30
+TOL203G	TÃ¶lvunarfrÃ¦Ã°i 2	279	MiÃ°. 27 apr. 2016 kl. 09:00 - 12:00
+UAU214M	VerndunarlÃ­ffrÃ¦Ã°i	22	MiÃ°. 27 apr. 2016 kl. 09:00 - 12:00
+BYG201G	Greining burÃ°arvirkja 1	19	MiÃ°. 27 apr. 2016 kl. 13:30 - 16:30
+EDL403G	Frumeinda- og ljÃ³sfrÃ¦Ã°i	13	MiÃ°. 27 apr. 2016 kl. 13:30 - 16:30
+LAN604M	BorgalandfrÃ¦Ã°i	25	MiÃ°. 27 apr. 2016 kl. 13:30 - 16:30
+LIF401G	ÃroskunarfrÃ¦Ã°i	44	MiÃ°. 27 apr. 2016 kl. 13:30 - 16:30
+VEL202G	BurÃ°arÃ¾olsfrÃ¦Ã°i	88	MiÃ°. 27 apr. 2016 kl. 13:30 - 16:30
+EFN410G	EÃ°lisefnafrÃ¦Ã°i B	23	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+JAR211G	SteindafrÃ¦Ã°i	20	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+JAR417G	EldfjallafrÃ¦Ã°i	57	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+RAF401G	Greining og uppbygging rÃ¡sa	15	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+RAF616M	ÃrÃ¡Ã°laus fjarskipti	8	Fim. 28 apr. 2016 kl. 09:00 - 12:00
 STA403M	Algebra III	14	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-TOL401G	Stırikerfi	117	Fim. 28 apr. 2016 kl. 09:00 - 12:00
-IDN403G	Varma- og varmaflutningsfræği	28	Fim. 28 apr. 2016 kl. 13:30 - 16:30
-LIF201G	Örverufræği	90	Fim. 28 apr. 2016 kl. 13:30 - 16:30
-REI202M	Ólínuleg bestun	36	Fim. 28 apr. 2016 kl. 13:30 - 16:30
-REI201G	Stærğfræği og reiknifræği	97	Fös. 29 apr. 2016 kl. 09:00 - 12:00
-STA207G	Stærğfræğigreining IIA	20	Fös. 29 apr. 2016 kl. 09:00 - 12:00
-STA401G	Stærğfræğigreining IV	100	Fös. 29 apr. 2016 kl. 09:00 - 12:00
-FER210F	Kenningar í ferğamálafræği (FER409G)	4	Fös. 29 apr. 2016 kl. 13:30 - 16:30
-FER409G	Kenningar í ferğamálafræği (FER210F)	61	Fös. 29 apr. 2016 kl. 13:30 - 16:30
-HBV601G	Hugbúnağarverkefni 2	91	Fös. 29 apr. 2016 kl. 13:30 - 16:30
-LIF227F	Skordır (LÍF633G)	1	Fös. 29 apr. 2016 kl. 13:30 - 16:30
-LIF633G	Skordır (LÍF227F)	17	Fös. 29 apr. 2016 kl. 13:30 - 16:30
-STA205G	Stærğfræğigreining II	262	Fös. 29 apr. 2016 kl. 13:30 - 16:30
-BYG401G	Reiknileg aflfræği 1	17	Mán. 02 mai. 2016 kl. 09:00 - 12:00
-EDL402G	Varmafræği 1	38	Mán. 02 mai. 2016 kl. 09:00 - 12:00
-EFN406G	Lífræn efnafræği 2	76	Mán. 02 mai. 2016 kl. 09:00 - 12:00
-IDN603G	Iğnağartölfræği	43	Mán. 02 mai. 2016 kl. 09:00 - 12:00
-JED201G	Almenn jarğeğlisfræği	37	Mán. 02 mai. 2016 kl. 09:00 - 12:00
-LIF635G	Atferlisfræği	10	Mán. 02 mai. 2016 kl. 09:00 - 12:00
-MAS201F	Líkindareikningur og tölfræği (HAG206G,STÆ203G)	15	Mán. 02 mai. 2016 kl. 13:30 - 16:30
-STA203G	Líkindareikningur og tölfræği (HAG206G,MAS201F)	307	Mán. 02 mai. 2016 kl. 13:30 - 16:30
-TOV602M	Verkfræği ígreyptra kerfa	7	Mán. 02 mai. 2016 kl. 13:30 - 16:30
-BYG601G	Húsagerğ	22	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-EDL204G	Eğlisfræği allt umkring	4	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-EFN404G	Ólífræn efnafræği 2	10	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-JAR617G	Jöklajarğfræği	41	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-LAN205G	Listin ağ ferğast	101	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-LIF243F	Dıralífeğlisfræği fyrir framhaldsnema (LÍF410G)	2	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-LIF410G	Dıralífeğlisfræği (LÍF243F)	26	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-RAF601G	Rafmagnsvélar 1	7	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-UAU206M	Umhverfishagfræği	22	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-VEL218F	Bein nıting jarğhita	23	Şri. 03 mai. 2016 kl. 09:00 - 12:00
-EDL612M	Stærğfræğileg eğlisfræği	3	Şri. 03 mai. 2016 kl. 13:30 - 16:30
-IDN401G	Ağgerğagreining	113	Şri. 03 mai. 2016 kl. 13:30 - 16:30
-LIF214G	Dırafræği - hryggleysingjar	49	Şri. 03 mai. 2016 kl. 13:30 - 16:30
-HBV201G	Viğmótsforritun	216	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-JAR202G	Ytri öfl jarğar	25	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-LEF616M	Bygging og eiginleikar próteina	10	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-LIF615M	Gróğurríki Íslands og jarğvegur	19	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-RAF201G	Greining rása	38	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-UMV203G	Jarğfræği fyrir verkfræğinga	23	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-VEL402G	Vélhlutafræği	26	Miğ. 04 mai. 2016 kl. 09:00 - 12:00
-EDL401G	Rafsegulfræği 1 (RAF402G)	24	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-EFN202G	Almenn efnafræği 2	151	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-LAN209F	Ferğamennska og umhverfi (LAN410G)	4	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-LAN219G	Inngangur ağ veğur-og veğurfarsfræği	14	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-LAN410G	Ferğamennska og umhverfi (LAN209F)	62	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-RAF402G	Rafsegulfræği (EĞL401G)	12	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-TOL202M	Şığendur	42	Miğ. 04 mai. 2016 kl. 13:30 - 16:30
-FER208G	Fyrirtæki og stofnanir ferğaşjónustunnar	99	Fös. 06 mai. 2016 kl. 09:00 - 12:00
-JAR212G	Almenn jarğefnafræği	24	Fös. 06 mai. 2016 kl. 09:00 - 12:00
-JAR415G	Auğlindir og umhverfisjarğfræği	20	Fös. 06 mai. 2016 kl. 09:00 - 12:00
-LIF403G	Şróunarfræği	64	Fös. 06 mai. 2016 kl. 09:00 - 12:00
-TOL403G	Greining reiknirita	141	Fös. 06 mai. 2016 kl. 09:00 - 12:00
-UMV203M	Vatns- og fráveitur	11	Fös. 06 mai. 2016 kl. 09:00 - 12:00
-BYG202M	Steinsteypuvirki 1	9	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-BYG203M	Vegagerğ	4	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-EDL201G	Eğlisfræği 2 V (EĞL206G)	142	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-EDL206G	Eğlisfræği 2 R (EĞL201G)	26	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-EDL402M	Inngangur ağ stjarneğlisfræği	5	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-EFN207G	Notkun stærğfræği og eğlisfræği í efnafræği	10	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-HBV203F	Gæğastjórnun í hugbúnağargerğ	11	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-STA418M	Grundvöllur líkindafræğinnar	13	Fös. 06 mai. 2016 kl. 13:30 - 16:30
-EFN208G	Efnagreining	88	Mán. 09 mai. 2016 kl. 09:00 - 12:00
-IDN402G	Hermun	35	Mán. 09 mai. 2016 kl. 09:00 - 12:00
-JAR619G	Hafiğ á tímum hnattrænna breytinga	12	Mán. 09 mai. 2016 kl. 09:00 - 12:00
-LIF215G	Lífmælingar I	50	Mán. 09 mai. 2016 kl. 09:00 - 12:00
-TOV201G	Greining og hönnun stafrænna rása	219	Mán. 09 mai. 2016 kl. 09:00 - 12:00
-VEL401G	Sveiflufræği	25	Mán. 09 mai. 2016 kl. 09:00 - 12:00
-BYG201M	Stálvirki 1	7	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-EDL205G	Eğlisfræği rúms og tíma	22	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-EFN408G	Efnagreiningartækni	51	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-FER211F	Skipulag og stefnumótun í ferğamennsku (FER609G)	4	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-FER609G	Skipulag og stefnumótun í ferğamennsku (FER211F)	14	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-HBV402G	Şróun hugbúnağar A	51	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-JAR611G	Umhverfisjarğefnafræği	18	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-LAN401G	Sjónarhorn landfræğinnar	8	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-LIF614M	Frumulíffræği II	21	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-RAF404G	Líkindaağferğir	14	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-STA411G	Grannfræği	20	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-UMV201G	Vatnafræği	16	Mán. 09 mai. 2016 kl. 13:30 - 16:30
-EFN612M	Litrófsgreiningar sameinda og hvarfgangur efnahvarfa	9	Şri. 10 mai. 2016 kl. 09:00 - 12:00
-TOL203M	Tölvugrafík	94	Şri. 10 mai. 2016 kl. 09:00 - 12:00
-VEL201G	Tölvuteikning og framsetning	89	Şri. 10 mai. 2016 kl. 09:00 - 12:00
-VEL215F	Tölvuvædd varma- og straumfræği	13	Şri. 10 mai. 2016 kl. 09:00 - 12:00
-EDL203G	Eğlisfræği 2a	16	Şri. 10 mai. 2016 kl. 13:30 - 16:30
-VEL405G	Orkuferli	7	Şri. 10 mai. 2016 kl. 13:30 - 16:30
+TOL401G	StÃ½rikerfi	117	Fim. 28 apr. 2016 kl. 09:00 - 12:00
+IDN403G	Varma- og varmaflutningsfrÃ¦Ã°i	28	Fim. 28 apr. 2016 kl. 13:30 - 16:30
+LIF201G	Ã–rverufrÃ¦Ã°i	90	Fim. 28 apr. 2016 kl. 13:30 - 16:30
+REI202M	Ã“lÃ­nuleg bestun	36	Fim. 28 apr. 2016 kl. 13:30 - 16:30
+REI201G	StÃ¦rÃ°frÃ¦Ã°i og reiknifrÃ¦Ã°i	97	FÃ¶s. 29 apr. 2016 kl. 09:00 - 12:00
+STA207G	StÃ¦rÃ°frÃ¦Ã°igreining IIA	20	FÃ¶s. 29 apr. 2016 kl. 09:00 - 12:00
+STA401G	StÃ¦rÃ°frÃ¦Ã°igreining IV	100	FÃ¶s. 29 apr. 2016 kl. 09:00 - 12:00
+FER210F	Kenningar Ã­ ferÃ°amÃ¡lafrÃ¦Ã°i (FER409G)	4	FÃ¶s. 29 apr. 2016 kl. 13:30 - 16:30
+FER409G	Kenningar Ã­ ferÃ°amÃ¡lafrÃ¦Ã°i (FER210F)	61	FÃ¶s. 29 apr. 2016 kl. 13:30 - 16:30
+HBV601G	HugbÃºnaÃ°arverkefni 2	91	FÃ¶s. 29 apr. 2016 kl. 13:30 - 16:30
+LIF227F	SkordÃ½r (LÃF633G)	1	FÃ¶s. 29 apr. 2016 kl. 13:30 - 16:30
+LIF633G	SkordÃ½r (LÃF227F)	17	FÃ¶s. 29 apr. 2016 kl. 13:30 - 16:30
+STA205G	StÃ¦rÃ°frÃ¦Ã°igreining II	262	FÃ¶s. 29 apr. 2016 kl. 13:30 - 16:30
+BYG401G	Reiknileg aflfrÃ¦Ã°i 1	17	MÃ¡n. 02 mai. 2016 kl. 09:00 - 12:00
+EDL402G	VarmafrÃ¦Ã°i 1	38	MÃ¡n. 02 mai. 2016 kl. 09:00 - 12:00
+EFN406G	LÃ­frÃ¦n efnafrÃ¦Ã°i 2	76	MÃ¡n. 02 mai. 2016 kl. 09:00 - 12:00
+IDN603G	IÃ°naÃ°artÃ¶lfrÃ¦Ã°i	43	MÃ¡n. 02 mai. 2016 kl. 09:00 - 12:00
+JED201G	Almenn jarÃ°eÃ°lisfrÃ¦Ã°i	37	MÃ¡n. 02 mai. 2016 kl. 09:00 - 12:00
+LIF635G	AtferlisfrÃ¦Ã°i	10	MÃ¡n. 02 mai. 2016 kl. 09:00 - 12:00
+MAS201F	LÃ­kindareikningur og tÃ¶lfrÃ¦Ã°i (HAG206G,STÃ†203G)	15	MÃ¡n. 02 mai. 2016 kl. 13:30 - 16:30
+STA203G	LÃ­kindareikningur og tÃ¶lfrÃ¦Ã°i (HAG206G,MAS201F)	307	MÃ¡n. 02 mai. 2016 kl. 13:30 - 16:30
+TOV602M	VerkfrÃ¦Ã°i Ã­greyptra kerfa	7	MÃ¡n. 02 mai. 2016 kl. 13:30 - 16:30
+BYG601G	HÃºsagerÃ°	22	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+EDL204G	EÃ°lisfrÃ¦Ã°i allt umkring	4	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+EFN404G	Ã“lÃ­frÃ¦n efnafrÃ¦Ã°i 2	10	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+JAR617G	JÃ¶klajarÃ°frÃ¦Ã°i	41	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+LAN205G	Listin aÃ° ferÃ°ast	101	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+LIF243F	DÃ½ralÃ­feÃ°lisfrÃ¦Ã°i fyrir framhaldsnema (LÃF410G)	2	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+LIF410G	DÃ½ralÃ­feÃ°lisfrÃ¦Ã°i (LÃF243F)	26	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+RAF601G	RafmagnsvÃ©lar 1	7	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+UAU206M	UmhverfishagfrÃ¦Ã°i	22	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+VEL218F	Bein nÃ½ting jarÃ°hita	23	Ãri. 03 mai. 2016 kl. 09:00 - 12:00
+EDL612M	StÃ¦rÃ°frÃ¦Ã°ileg eÃ°lisfrÃ¦Ã°i	3	Ãri. 03 mai. 2016 kl. 13:30 - 16:30
+IDN401G	AÃ°gerÃ°agreining	113	Ãri. 03 mai. 2016 kl. 13:30 - 16:30
+LIF214G	DÃ½rafrÃ¦Ã°i - hryggleysingjar	49	Ãri. 03 mai. 2016 kl. 13:30 - 16:30
+HBV201G	ViÃ°mÃ³tsforritun	216	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+JAR202G	Ytri Ã¶fl jarÃ°ar	25	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+LEF616M	Bygging og eiginleikar prÃ³teina	10	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+LIF615M	GrÃ³Ã°urrÃ­ki Ãslands og jarÃ°vegur	19	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+RAF201G	Greining rÃ¡sa	38	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+UMV203G	JarÃ°frÃ¦Ã°i fyrir verkfrÃ¦Ã°inga	23	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+VEL402G	VÃ©lhlutafrÃ¦Ã°i	26	MiÃ°. 04 mai. 2016 kl. 09:00 - 12:00
+EDL401G	RafsegulfrÃ¦Ã°i 1 (RAF402G)	24	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+EFN202G	Almenn efnafrÃ¦Ã°i 2	151	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+LAN209F	FerÃ°amennska og umhverfi (LAN410G)	4	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+LAN219G	Inngangur aÃ° veÃ°ur-og veÃ°urfarsfrÃ¦Ã°i	14	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+LAN410G	FerÃ°amennska og umhverfi (LAN209F)	62	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+RAF402G	RafsegulfrÃ¦Ã°i (EÃL401G)	12	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+TOL202M	ÃÃ½Ã°endur	42	MiÃ°. 04 mai. 2016 kl. 13:30 - 16:30
+FER208G	FyrirtÃ¦ki og stofnanir ferÃ°aÃ¾jÃ³nustunnar	99	FÃ¶s. 06 mai. 2016 kl. 09:00 - 12:00
+JAR212G	Almenn jarÃ°efnafrÃ¦Ã°i	24	FÃ¶s. 06 mai. 2016 kl. 09:00 - 12:00
+JAR415G	AuÃ°lindir og umhverfisjarÃ°frÃ¦Ã°i	20	FÃ¶s. 06 mai. 2016 kl. 09:00 - 12:00
+LIF403G	ÃrÃ³unarfrÃ¦Ã°i	64	FÃ¶s. 06 mai. 2016 kl. 09:00 - 12:00
+TOL403G	Greining reiknirita	141	FÃ¶s. 06 mai. 2016 kl. 09:00 - 12:00
+UMV203M	Vatns- og frÃ¡veitur	11	FÃ¶s. 06 mai. 2016 kl. 09:00 - 12:00
+BYG202M	Steinsteypuvirki 1	9	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+BYG203M	VegagerÃ°	4	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+EDL201G	EÃ°lisfrÃ¦Ã°i 2 V (EÃL206G)	142	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+EDL206G	EÃ°lisfrÃ¦Ã°i 2 R (EÃL201G)	26	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+EDL402M	Inngangur aÃ° stjarneÃ°lisfrÃ¦Ã°i	5	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+EFN207G	Notkun stÃ¦rÃ°frÃ¦Ã°i og eÃ°lisfrÃ¦Ã°i Ã­ efnafrÃ¦Ã°i	10	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+HBV203F	GÃ¦Ã°astjÃ³rnun Ã­ hugbÃºnaÃ°argerÃ°	11	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+STA418M	GrundvÃ¶llur lÃ­kindafrÃ¦Ã°innar	13	FÃ¶s. 06 mai. 2016 kl. 13:30 - 16:30
+EFN208G	Efnagreining	88	MÃ¡n. 09 mai. 2016 kl. 09:00 - 12:00
+IDN402G	Hermun	35	MÃ¡n. 09 mai. 2016 kl. 09:00 - 12:00
+JAR619G	HafiÃ° Ã¡ tÃ­mum hnattrÃ¦nna breytinga	12	MÃ¡n. 09 mai. 2016 kl. 09:00 - 12:00
+LIF215G	LÃ­fmÃ¦lingar I	50	MÃ¡n. 09 mai. 2016 kl. 09:00 - 12:00
+TOV201G	Greining og hÃ¶nnun stafrÃ¦nna rÃ¡sa	219	MÃ¡n. 09 mai. 2016 kl. 09:00 - 12:00
+VEL401G	SveiflufrÃ¦Ã°i	25	MÃ¡n. 09 mai. 2016 kl. 09:00 - 12:00
+BYG201M	StÃ¡lvirki 1	7	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+EDL205G	EÃ°lisfrÃ¦Ã°i rÃºms og tÃ­ma	22	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+EFN408G	EfnagreiningartÃ¦kni	51	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+FER211F	Skipulag og stefnumÃ³tun Ã­ ferÃ°amennsku (FER609G)	4	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+FER609G	Skipulag og stefnumÃ³tun Ã­ ferÃ°amennsku (FER211F)	14	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+HBV402G	ÃrÃ³un hugbÃºnaÃ°ar A	51	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+JAR611G	UmhverfisjarÃ°efnafrÃ¦Ã°i	18	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+LAN401G	SjÃ³narhorn landfrÃ¦Ã°innar	8	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+LIF614M	FrumulÃ­ffrÃ¦Ã°i II	21	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+RAF404G	LÃ­kindaaÃ°ferÃ°ir	14	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+STA411G	GrannfrÃ¦Ã°i	20	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+UMV201G	VatnafrÃ¦Ã°i	16	MÃ¡n. 09 mai. 2016 kl. 13:30 - 16:30
+EFN612M	LitrÃ³fsgreiningar sameinda og hvarfgangur efnahvarfa	9	Ãri. 10 mai. 2016 kl. 09:00 - 12:00
+TOL203M	TÃ¶lvugrafÃ­k	94	Ãri. 10 mai. 2016 kl. 09:00 - 12:00
+VEL201G	TÃ¶lvuteikning og framsetning	89	Ãri. 10 mai. 2016 kl. 09:00 - 12:00
+VEL215F	TÃ¶lvuvÃ¦dd varma- og straumfrÃ¦Ã°i	13	Ãri. 10 mai. 2016 kl. 09:00 - 12:00
+EDL203G	EÃ°lisfrÃ¦Ã°i 2a	16	Ãri. 10 mai. 2016 kl. 13:30 - 16:30
+VEL405G	Orkuferli	7	Ãri. 10 mai. 2016 kl. 13:30 - 16:30
 */
