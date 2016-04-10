@@ -28,11 +28,14 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 	Hversu mikið væri hægt að stytta hann? Hver er þá nauðsynlegur há-
 	marksfjöldi sæta?
 	
-	til að lágmarka fjölda prófstokka þarf að að hágmarka prófstokka sem innihalda ekkert.
-	til að stytta próftíma væri hægt að sleppa skorðunni um sætin.
+	Til að lágmarka fjölda prófstokka þarf að að hágmarka prófstokka sem innihalda ekkert.
+	Til að stytta próftíma væri hægt að sleppa skorðunni um sætin.
 
-	með því að stytta param n niður í 7 þá var hægt að komast upp með að hafa bara 14 prófstokka sem er lágmarks tíminn fyrir prófatímabilið.
-	það að taka út skorðuna fyrir sætafjöldann breytti engu varðandi fjölda slots sem þurfti til, en hámarks sætafjöldinn þarf þá að vera 1142 sem er tekinn úr áföngunum sem koma í prófstokk 1 sem er stærstur.
+	Með því að stytta param n niður í 7 þá var hægt að komast upp með að hafa bara
+	14 prófstokka sem er lágmarks tíminn fyrir prófatímabilið.
+	Það að taka út skorðuna fyrir sætafjöldann breytti engu varðandi fjölda slots sem þurfti
+	til, en hámarks sætafjöldinn þarf þá að vera 1142 sem er tekinn úr áföngunum sem koma í
+	prófstokk 1 sem er stærstur.
 	
 */
 
@@ -50,7 +53,12 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 	Hvernig dreifast nemendur á prófstokkanna? Breytist hvíldartími á milli
 	prófa?
 	
-	með því að láta Examslot sem eru fyrst fá meira vægi og summa síðan yfir þau námskeið sem eru á því sloti og margfalda með væginu, þvingum við módelið til að raða lausnunum á fyrri slotin frekar en þau seinni. niðurstaðan úr því er sú að próftímabilið styttist niður í 14 slot eða 7 daga. slotin eru látin fá meira vægi í gegnu param earlyBird sem er fall af examslots sem fer frá 1 og uppí 111111....11111 
+	Með því að láta Examslot sem eru fyrst fá meira vægi og summa síðan yfir þau
+	námskeið sem eru á því sloti og margfalda með væginu, þvingum við módelið til
+	að raða lausnunum á fyrri slotin frekar en þau seinni. niðurstaðan úr því er
+	sú að próftímabilið styttist niður í 14 slot eða 7 daga. slotin eru látin fá
+	meira vægi í gegnu param earlyBird sem er fall af examslots sem fer frá 1 og
+	uppí 111111....11111 
 */
 #markfall fyrir lið c
 #maximize profStokkur {e in ExamSlots}: sum{c in CidExam} Slot[c,e] * earlyBird[e]*cidCount[c];
@@ -58,8 +66,13 @@ var Slot{CidExam, ExamSlots} binary; # ákvörðunarbreyta
 
 /*
 	liður D)
+
+	Reynið nú að færa fjölmennu námskeiðin fyrr á próftímabilið. Hvernig breytist 
+	lausnin? Skoðið hvernig hvíldartími og dreifing nemenda yfir prófstokka breytist.
 	
-	pælingin var að gefa mínus fyrir það að vera seint í prófstokkunum með því að hafa / e*e*e*e. einnig gáfum við stigvaxandi mínus fyrir það að hafa mörg námskeið í prófstokk. þannig náum við að hafa öll stærstu námskeiðin fremst.
+	Pælingin var að gefa mínus fyrir það að vera seint í prófstokkunum með því
+	að hafa / e*e*e*e. einnig gáfum við stigvaxandi mínus fyrir það að hafa mörg
+	námskeið í prófstokk. þannig náum við að hafa öll stærstu námskeiðin fremst.
 */
 #markfall fyrir lið d
 
